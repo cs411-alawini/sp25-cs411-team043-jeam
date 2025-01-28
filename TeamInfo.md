@@ -12,8 +12,8 @@
 | Member1     |   astep7@illinois.edu  |
 | Member2     |Melissa Aninagyei-Bonsu |
 | Member2     |    mba4@illinois.edu   |
-| Member3     |   Jennifer             |
-| Member3     |       @illinois.edu    |
+| Member3     |   Jennifer Lopez       |
+| Member3     |  jlope@illinois.edu    |
 
 ## Project Information
 
