@@ -1,0 +1,1001 @@
+studentInterestId,netId,interest1,interest2,interest3
+0,gjone81,Health & Human Sciences,Community Service & Philanthropy,Health & Human Sciences
+1,npayn20,Agricultural,Health & Wellness,Humanities
+2,cjohn86,Advocacy & Activism,Faith,Agricultural
+3,smcki25,Health & Human Sciences,Advocacy & Activism,~ Affiliation: Women's Resources Center (WRC)
+4,mwell79,Performance Arts,Student Governance & Councils,Agricultural
+5,tdavi7,Ideology & Politics,Student Governance & Councils,Social & Leisure
+6,dkim64,Education,International,Veteran & Military Connected
+7,mking79,Social & Leisure,Education,Media Arts
+8,swill89,Club Sports,~ Affiliation: Women's Resources Center (WRC),Health & Wellness
+9,epere72,Engineering & Mathematics,Law,~ Affiliation: Women's Resources Center (WRC)
+10,smart11,Business,Identity & Culture,Social & Leisure
+11,mmill83,Community Service & Philanthropy,Life & Physical Sciences,Agricultural
+12,mmend32,Ideology & Politics,Student Governance & Councils,Veterinary
+13,dsosa21,Law,Media Arts,~ Affiliation: Asian American Cultural Center (AACC)
+14,mfree40,Social & Leisure,Engineering & Mathematics,Environmental & Sustainability
+15,gshie1,Life & Physical Sciences,Faith,Performance Arts
+16,klivi76,Student Governance & Councils,Agricultural,Veteran & Military Connected
+17,jdavi51,Performance Arts,Humanities,Agricultural
+18,dali81,Ideology & Politics,Club Sports,Education
+19,dgree96,Community Service & Philanthropy,Health & Wellness,Veterinary
+20,jwhit25,Life & Physical Sciences,Business,Social & Behavioral Sciences
+21,cmcla17,Health & Wellness,~ Affiliation: Asian American Cultural Center (AACC),Technology
+22,mjone9,Social & Leisure,Athletic & Recreation,Business
+23,vcart87,~ Affiliation: Asian American Cultural Center (AACC),Education,Ideology & Politics
+24,ehigg34,Health & Wellness,Business,Life & Physical Sciences
+25,jhowa28,Social Fraternities & Sororities,Agricultural,Religion & Spirituality
+26,jobri18,Performance Arts,Environmental & Sustainability,Veteran & Military Connected
+27,phend36,Ideology & Politics,Veteran & Military Connected,Veteran & Military Connected
+28,vthom15,Veteran & Military Connected,Social & Leisure,Religion & Spirituality
+29,rlope58,Life & Physical Sciences,Performance Arts,Technology
+30,cjoyc66,Engineering & Mathematics,Life & Physical Sciences,Religion & Spirituality
+31,fsimp5,Social & Behavioral Sciences,Environmental & Sustainability,Social & Behavioral Sciences
+32,nwrig38,Environmental & Sustainability,Faith,Social & Behavioral Sciences
+33,emart9,Social Fraternities & Sororities,Athletic & Recreation,Health & Human Sciences
+34,idavi6,Ideology & Politics,Agricultural,Faith
+35,jhall95,International,~ Affiliation: Women's Resources Center (WRC),Athletic & Recreation
+36,mwill33,Veteran & Military Connected,Pedagogy & Instruction,Advocacy & Activism
+37,jjone75,~ Affiliation: Asian American Cultural Center (AACC),Environmental & Sustainability,Faith
+38,mrodr99,Athletic & Recreation,Veteran & Military Connected,Performance Arts
+39,amars85,Technology,Law,Club Sports
+40,cwals66,Social & Behavioral Sciences,Humanities,Information & Data Sciences
+41,gbrid67,Information & Data Sciences,Ideology & Politics,Social & Leisure
+42,pflow3,Religion & Spirituality,Club Sports,~ Affiliation: Women's Resources Center (WRC)
+43,cbrow19,Law,Social & Leisure,Community Service & Philanthropy
+44,swarn74,Information & Data Sciences,Social & Leisure,Humanities
+45,bpalm18,Technology,Religion & Spirituality,Engineering & Mathematics
+46,tmerc94,Ideology & Politics,Athletic & Recreation,Veterinary
+47,skoch6,Pedagogy & Instruction,Veterinary,Law
+48,dsmit26,Community Service & Philanthropy,Information & Data Sciences,Information & Data Sciences
+49,jalva9,Pedagogy & Instruction,Social Fraternities & Sororities,Health & Wellness
+50,ewebb96,Student Governance & Councils,Engineering & Mathematics,Humanities
+51,fpham43,Humanities,Veteran & Military Connected,Student Governance & Councils
+52,tmull37,Engineering & Mathematics,Environmental & Sustainability,Social & Behavioral Sciences
+53,ddown74,Business,Veterinary,Engineering & Mathematics
+54,jsims10,International,Health & Wellness,Honorary
+55,jrhod70,Student Governance & Councils,Health & Human Sciences,Faith
+56,dking24,Environmental & Sustainability,Social & Leisure,Performance Arts
+57,msmit71,Environmental & Sustainability,Business,Information & Data Sciences
+58,kwong1,Social & Behavioral Sciences,Performance Arts,Religion & Spirituality
+59,jvale21,Education,Student Governance & Councils,Life & Physical Sciences
+60,krios78,Agricultural,~ Affiliation: Asian American Cultural Center (AACC),~ Affiliation: Asian American Cultural Center (AACC)
+61,mloga69,Social & Leisure,International,~ Affiliation: Asian American Cultural Center (AACC)
+62,ahall80,Education,Engineering & Mathematics,Identity & Culture
+63,aweek47,Performance Arts,Education,Business
+64,jlee56,Community Service & Philanthropy,Education,International
+65,apace12,Performance Arts,~ Affiliation: Women's Resources Center (WRC),International
+66,dmcin66,Media Arts,Social & Leisure,Student Governance & Councils
+67,rhunt85,Engineering & Mathematics,Faith,~ Affiliation: Women's Resources Center (WRC)
+68,jpric10,Technology,Religion & Spirituality,~ Affiliation: Asian American Cultural Center (AACC)
+69,hholl46,Performance Arts,Social Fraternities & Sororities,Religion & Spirituality
+70,ecruz16,Media Arts,Education,Faith
+71,srami98,Ideology & Politics,Ideology & Politics,Social Fraternities & Sororities
+72,kschr88,Advocacy & Activism,Technology,Humanities
+73,jphil86,Technology,Ideology & Politics,Honorary
+74,tstou19,Health & Wellness,Performance Arts,International
+75,jjose51,Business,Student Governance & Councils,Club Sports
+76,rpete53,~ Affiliation: Asian American Cultural Center (AACC),Humanities,Humanities
+77,pbrow80,Student Governance & Councils,Health & Wellness,~ Affiliation: Asian American Cultural Center (AACC)
+78,cwill29,Social Fraternities & Sororities,Life & Physical Sciences,Education
+79,dgree93,Health & Human Sciences,Engineering & Mathematics,Ideology & Politics
+80,jgran33,Social & Behavioral Sciences,Veterinary,Honorary
+81,aherr60,Environmental & Sustainability,Social & Leisure,Education
+82,clin51,Social & Leisure,~ Affiliation: Asian American Cultural Center (AACC),Community Service & Philanthropy
+83,hgord50,Media Arts,Ideology & Politics,Performance Arts
+84,rdono40,Student Governance & Councils,Veterinary,Environmental & Sustainability
+85,knels4,Honorary,International,Agricultural
+86,bolse90,Community Service & Philanthropy,Information & Data Sciences,Ideology & Politics
+87,jwash66,Advocacy & Activism,Pedagogy & Instruction,Business
+88,jhoga70,Honorary,~ Affiliation: Asian American Cultural Center (AACC),Performance Arts
+89,aloga31,Student Governance & Councils,Veterinary,Student Governance & Councils
+90,ajone53,Environmental & Sustainability,Ideology & Politics,Humanities
+91,chugh63,Media Arts,Veterinary,Life & Physical Sciences
+92,dthom82,~ Affiliation: Asian American Cultural Center (AACC),Information & Data Sciences,Business
+93,rmorg89,Honorary,Health & Wellness,International
+94,sprin76,Environmental & Sustainability,~ Affiliation: Women's Resources Center (WRC),International
+95,phigg97,Social & Behavioral Sciences,Religion & Spirituality,Education
+96,mjone36,Engineering & Mathematics,Identity & Culture,Social Fraternities & Sororities
+97,eande63,Health & Wellness,Law,Veteran & Military Connected
+98,kmedi97,Social & Leisure,Engineering & Mathematics,Social & Leisure
+99,pshep30,Student Governance & Councils,Performance Arts,Environmental & Sustainability
+100,jknap44,Pedagogy & Instruction,Life & Physical Sciences,Ideology & Politics
+101,bmitc5,Faith,Veterinary,Pedagogy & Instruction
+102,kvega48,Athletic & Recreation,Humanities,Education
+103,mgilb44,Advocacy & Activism,International,Social & Leisure
+104,amay56,Life & Physical Sciences,Club Sports,Education
+105,amurr56,Advocacy & Activism,Honorary,International
+106,wbarr92,~ Affiliation: Asian American Cultural Center (AACC),Ideology & Politics,Engineering & Mathematics
+107,asloa93,Honorary,Veterinary,Life & Physical Sciences
+108,choga42,International,Humanities,Information & Data Sciences
+109,tmitc99,Athletic & Recreation,Social & Behavioral Sciences,Engineering & Mathematics
+110,rrich89,Identity & Culture,Ideology & Politics,Life & Physical Sciences
+111,dpark68,Social & Leisure,Ideology & Politics,Identity & Culture
+112,tstan39,Agricultural,Club Sports,International
+113,mgent55,Business,~ Affiliation: Women's Resources Center (WRC),Social & Leisure
+114,kmart20,Information & Data Sciences,International,Ideology & Politics
+115,amcph16,Community Service & Philanthropy,Business,Honorary
+116,ltayl87,Pedagogy & Instruction,Life & Physical Sciences,Environmental & Sustainability
+117,aturn28,Identity & Culture,Advocacy & Activism,Environmental & Sustainability
+118,pmyer27,~ Affiliation: Women's Resources Center (WRC),Law,International
+119,kpaul95,Honorary,Life & Physical Sciences,Social Fraternities & Sororities
+120,apace69,Faith,Health & Wellness,Honorary
+121,klee54,Engineering & Mathematics,~ Affiliation: Asian American Cultural Center (AACC),Ideology & Politics
+122,hthom59,Health & Wellness,Performance Arts,Media Arts
+123,mflor70,International,Information & Data Sciences,Humanities
+124,mmeye29,Social & Leisure,Engineering & Mathematics,Social & Behavioral Sciences
+125,wbake3,Humanities,Community Service & Philanthropy,Honorary
+126,cblac44,Community Service & Philanthropy,Community Service & Philanthropy,Information & Data Sciences
+127,mrobe46,Agricultural,Engineering & Mathematics,Technology
+128,ehawk68,Student Governance & Councils,Honorary,~ Affiliation: Asian American Cultural Center (AACC)
+129,bshep62,~ Affiliation: Women's Resources Center (WRC),Performance Arts,Club Sports
+130,jfros66,Pedagogy & Instruction,Agricultural,Business
+131,hcann84,Business,~ Affiliation: Asian American Cultural Center (AACC),Agricultural
+132,lcuev43,Veteran & Military Connected,~ Affiliation: Women's Resources Center (WRC),Veteran & Military Connected
+133,dmart98,Athletic & Recreation,Ideology & Politics,Business
+134,kponc31,Social Fraternities & Sororities,Law,Environmental & Sustainability
+135,kruss55,Honorary,International,Engineering & Mathematics
+136,lmart85,Faith,Health & Human Sciences,Performance Arts
+137,jboyd25,Technology,Technology,~ Affiliation: Asian American Cultural Center (AACC)
+138,dhayn9,Faith,Faith,Faith
+139,lrobl7,Advocacy & Activism,International,Media Arts
+140,kwals27,Social Fraternities & Sororities,Engineering & Mathematics,Pedagogy & Instruction
+141,cande50,Environmental & Sustainability,Information & Data Sciences,Information & Data Sciences
+142,gcrai1,Performance Arts,Health & Wellness,Engineering & Mathematics
+143,pgibs93,~ Affiliation: Women's Resources Center (WRC),Life & Physical Sciences,Veterinary
+144,pritt2,Religion & Spirituality,Information & Data Sciences,Education
+145,sscot88,Athletic & Recreation,Health & Human Sciences,Social Fraternities & Sororities
+146,nforb60,Pedagogy & Instruction,Veterinary,Advocacy & Activism
+147,slyon90,Social & Leisure,Media Arts,~ Affiliation: Asian American Cultural Center (AACC)
+148,sflor62,Social & Behavioral Sciences,Environmental & Sustainability,~ Affiliation: Women's Resources Center (WRC)
+149,dhigg74,Health & Human Sciences,Education,Health & Human Sciences
+150,kburk22,Faith,Engineering & Mathematics,Religion & Spirituality
+151,ecase8,Faith,Advocacy & Activism,Education
+152,gkent17,Environmental & Sustainability,Social & Behavioral Sciences,Pedagogy & Instruction
+153,kgreg37,Information & Data Sciences,Student Governance & Councils,Social Fraternities & Sororities
+154,nalva50,~ Affiliation: Women's Resources Center (WRC),Veteran & Military Connected,Information & Data Sciences
+155,cshan56,Pedagogy & Instruction,Life & Physical Sciences,Agricultural
+156,lwolf62,Pedagogy & Instruction,Ideology & Politics,Humanities
+157,ahuds82,Honorary,Advocacy & Activism,Club Sports
+158,mstew2,Information & Data Sciences,Social & Behavioral Sciences,Pedagogy & Instruction
+159,jhard76,Ideology & Politics,Agricultural,Veterinary
+160,rbald25,Social Fraternities & Sororities,Education,Technology
+161,mgrah63,~ Affiliation: Women's Resources Center (WRC),Environmental & Sustainability,Engineering & Mathematics
+162,mlee93,Faith,Faith,Life & Physical Sciences
+163,scros55,Student Governance & Councils,Advocacy & Activism,Health & Human Sciences
+164,fhoop72,Veterinary,Student Governance & Councils,Student Governance & Councils
+165,bmoor7,Media Arts,Veteran & Military Connected,Community Service & Philanthropy
+166,jpage79,Social Fraternities & Sororities,Ideology & Politics,Honorary
+167,egome48,Life & Physical Sciences,Social & Leisure,Agricultural
+168,msmit65,Social & Behavioral Sciences,Faith,Veterinary
+169,prome48,Social & Leisure,Performance Arts,Veteran & Military Connected
+170,ecole14,Law,Law,Faith
+171,akent84,Social & Leisure,Veteran & Military Connected,Environmental & Sustainability
+172,tjone49,Ideology & Politics,~ Affiliation: Asian American Cultural Center (AACC),Pedagogy & Instruction
+173,jhall51,Faith,Veteran & Military Connected,Agricultural
+174,cbroo81,~ Affiliation: Women's Resources Center (WRC),Identity & Culture,Health & Human Sciences
+175,csmit93,Law,Environmental & Sustainability,Life & Physical Sciences
+176,jstei51,Veterinary,Education,~ Affiliation: Women's Resources Center (WRC)
+177,sagui8,Performance Arts,Social & Leisure,Veterinary
+178,plope69,Advocacy & Activism,Technology,Athletic & Recreation
+179,hmoor60,Performance Arts,Pedagogy & Instruction,Social & Behavioral Sciences
+180,msmit85,Student Governance & Councils,Education,~ Affiliation: Asian American Cultural Center (AACC)
+181,awilk83,Social & Leisure,Information & Data Sciences,Technology
+182,dleon93,~ Affiliation: Women's Resources Center (WRC),Law,Athletic & Recreation
+183,gwest5,Honorary,Ideology & Politics,Education
+184,sjone4,Life & Physical Sciences,Business,Club Sports
+185,sdoyl30,~ Affiliation: Asian American Cultural Center (AACC),Religion & Spirituality,Ideology & Politics
+186,relli37,Social & Leisure,Social & Leisure,Identity & Culture
+187,chall47,Veteran & Military Connected,Religion & Spirituality,Education
+188,lbrad47,Agricultural,Engineering & Mathematics,Performance Arts
+189,rorti46,Community Service & Philanthropy,Honorary,Pedagogy & Instruction
+190,jsmit64,Community Service & Philanthropy,Advocacy & Activism,Humanities
+191,sstep89,Agricultural,Social Fraternities & Sororities,Athletic & Recreation
+192,bgonz37,Community Service & Philanthropy,Ideology & Politics,Athletic & Recreation
+193,kashl12,Pedagogy & Instruction,Honorary,Social & Behavioral Sciences
+194,anguy32,Student Governance & Councils,Pedagogy & Instruction,Humanities
+195,ccrai99,International,Religion & Spirituality,Social Fraternities & Sororities
+196,jchap18,Social & Leisure,~ Affiliation: Women's Resources Center (WRC),Health & Wellness
+197,djone37,Health & Human Sciences,Social & Behavioral Sciences,Health & Wellness
+198,evill80,Environmental & Sustainability,~ Affiliation: Women's Resources Center (WRC),Health & Wellness
+199,elewi9,Agricultural,Engineering & Mathematics,Agricultural
+200,cwarr45,~ Affiliation: Asian American Cultural Center (AACC),Advocacy & Activism,Student Governance & Councils
+201,hsmit29,Education,Law,Agricultural
+202,khess85,~ Affiliation: Women's Resources Center (WRC),Faith,Community Service & Philanthropy
+203,acolo3,Athletic & Recreation,Health & Human Sciences,Pedagogy & Instruction
+204,hmill14,Information & Data Sciences,Pedagogy & Instruction,~ Affiliation: Asian American Cultural Center (AACC)
+205,akeit47,Community Service & Philanthropy,Club Sports,~ Affiliation: Women's Resources Center (WRC)
+206,dcarr54,Social & Leisure,Performance Arts,Identity & Culture
+207,sreil28,Social & Leisure,Media Arts,Veterinary
+208,kbaut80,Identity & Culture,Technology,Advocacy & Activism
+209,jwils95,~ Affiliation: Women's Resources Center (WRC),Social & Behavioral Sciences,Humanities
+210,rblev4,Social & Leisure,Social & Behavioral Sciences,Community Service & Philanthropy
+211,kflyn87,Media Arts,Pedagogy & Instruction,Veterinary
+212,tdavi30,Environmental & Sustainability,Club Sports,Education
+213,adono76,Community Service & Philanthropy,Ideology & Politics,~ Affiliation: Asian American Cultural Center (AACC)
+214,pclar93,Health & Wellness,Community Service & Philanthropy,Identity & Culture
+215,jniel55,Humanities,Information & Data Sciences,Agricultural
+216,jbrya3,Advocacy & Activism,Engineering & Mathematics,Ideology & Politics
+217,jdavi97,Law,Identity & Culture,Health & Wellness
+218,lho91,Performance Arts,Environmental & Sustainability,Health & Human Sciences
+219,jbrad89,Veterinary,Club Sports,Advocacy & Activism
+220,tvega52,Pedagogy & Instruction,Identity & Culture,Religion & Spirituality
+221,schan88,Religion & Spirituality,Technology,Social Fraternities & Sororities
+222,sjack63,~ Affiliation: Asian American Cultural Center (AACC),Health & Wellness,Agricultural
+223,jelli29,Athletic & Recreation,Engineering & Mathematics,Media Arts
+224,jcamp80,Technology,Information & Data Sciences,Information & Data Sciences
+225,treye87,Life & Physical Sciences,Technology,Education
+226,lthom4,Education,Pedagogy & Instruction,~ Affiliation: Women's Resources Center (WRC)
+227,mrodr3,~ Affiliation: Asian American Cultural Center (AACC),Health & Human Sciences,Engineering & Mathematics
+228,emccl52,Social & Leisure,Athletic & Recreation,Information & Data Sciences
+229,relli17,Agricultural,Engineering & Mathematics,Faith
+230,khuan3,Environmental & Sustainability,Media Arts,Media Arts
+231,mcobb86,Social Fraternities & Sororities,Identity & Culture,Honorary
+232,krios89,Agricultural,Club Sports,Social & Behavioral Sciences
+233,jdani52,Faith,~ Affiliation: Asian American Cultural Center (AACC),Honorary
+234,cbutl26,Performance Arts,International,Ideology & Politics
+235,mcald76,Media Arts,Student Governance & Councils,Environmental & Sustainability
+236,lcunn68,Club Sports,Religion & Spirituality,Health & Human Sciences
+237,aowen18,Identity & Culture,Information & Data Sciences,Education
+238,jzuni59,~ Affiliation: Asian American Cultural Center (AACC),International,~ Affiliation: Asian American Cultural Center (AACC)
+239,criva65,Social Fraternities & Sororities,Veterinary,Social Fraternities & Sororities
+240,kgill45,Club Sports,Social & Behavioral Sciences,Athletic & Recreation
+241,rreye16,~ Affiliation: Women's Resources Center (WRC),Club Sports,Humanities
+242,shopk22,Business,Student Governance & Councils,Agricultural
+243,mbeck88,Engineering & Mathematics,Technology,Veteran & Military Connected
+244,ajohn32,~ Affiliation: Women's Resources Center (WRC),Education,Club Sports
+245,eburt62,Technology,Education,Club Sports
+246,mevan16,~ Affiliation: Women's Resources Center (WRC),Student Governance & Councils,Life & Physical Sciences
+247,rlynn68,Honorary,Student Governance & Councils,Health & Human Sciences
+248,lluca80,Engineering & Mathematics,Engineering & Mathematics,Information & Data Sciences
+249,bpott44,Technology,Media Arts,Information & Data Sciences
+250,wmart13,Athletic & Recreation,Business,Honorary
+251,jhoff15,Ideology & Politics,Law,Law
+252,nmile32,Student Governance & Councils,~ Affiliation: Women's Resources Center (WRC),Business
+253,mmill52,Environmental & Sustainability,Life & Physical Sciences,Veteran & Military Connected
+254,lcole15,Business,Law,Student Governance & Councils
+255,mburn40,Social Fraternities & Sororities,Pedagogy & Instruction,Student Governance & Councils
+256,ldavi98,Environmental & Sustainability,Honorary,Religion & Spirituality
+257,cmill50,Community Service & Philanthropy,Engineering & Mathematics,Media Arts
+258,asull70,Pedagogy & Instruction,Performance Arts,Technology
+259,rbank27,Life & Physical Sciences,Media Arts,Humanities
+260,msilv93,Ideology & Politics,Information & Data Sciences,Community Service & Philanthropy
+261,cwill90,Information & Data Sciences,Social & Leisure,Faith
+262,rmorg82,Identity & Culture,International,~ Affiliation: Asian American Cultural Center (AACC)
+263,okrau79,Information & Data Sciences,Education,Religion & Spirituality
+264,ahall45,Business,~ Affiliation: Asian American Cultural Center (AACC),Advocacy & Activism
+265,pcohe74,Performance Arts,Veteran & Military Connected,~ Affiliation: Asian American Cultural Center (AACC)
+266,dhern69,Veteran & Military Connected,Athletic & Recreation,Health & Wellness
+267,jscot33,Social Fraternities & Sororities,Social Fraternities & Sororities,Pedagogy & Instruction
+268,kandr70,Identity & Culture,Honorary,Education
+269,bdelg87,Veterinary,Advocacy & Activism,Veteran & Military Connected
+270,lbrow58,Honorary,Engineering & Mathematics,Humanities
+271,dross91,Honorary,Identity & Culture,Performance Arts
+272,rduar14,Club Sports,Technology,Religion & Spirituality
+273,jruss19,Social & Leisure,~ Affiliation: Asian American Cultural Center (AACC),Social & Leisure
+274,cmyer42,Veterinary,Honorary,~ Affiliation: Asian American Cultural Center (AACC)
+275,kdean42,Media Arts,International,Faith
+276,kwalk25,International,Environmental & Sustainability,Law
+277,broge85,International,Media Arts,Religion & Spirituality
+278,gkirb81,Health & Human Sciences,Pedagogy & Instruction,Ideology & Politics
+279,chall79,Performance Arts,Ideology & Politics,Health & Human Sciences
+280,sgood21,Advocacy & Activism,Social & Behavioral Sciences,Honorary
+281,ddavi31,Athletic & Recreation,Humanities,Media Arts
+282,fmerc34,Performance Arts,Technology,Social & Behavioral Sciences
+283,kolso66,International,Social & Leisure,Life & Physical Sciences
+284,jkenn60,Club Sports,Religion & Spirituality,Religion & Spirituality
+285,smatt92,Business,International,Honorary
+286,hwhit41,Performance Arts,Social & Leisure,Social & Behavioral Sciences
+287,mcart55,Agricultural,Club Sports,Social & Leisure
+288,csimm39,Law,Veterinary,Community Service & Philanthropy
+289,rpete16,Engineering & Mathematics,Club Sports,Social Fraternities & Sororities
+290,jmatt18,Health & Human Sciences,Humanities,Media Arts
+291,awils96,Health & Human Sciences,Humanities,Ideology & Politics
+292,mpars75,Athletic & Recreation,Veterinary,Student Governance & Councils
+293,jswee49,International,Humanities,Environmental & Sustainability
+294,ssant80,Law,Ideology & Politics,Pedagogy & Instruction
+295,cjohn58,Performance Arts,Technology,Club Sports
+296,twarn9,Education,Student Governance & Councils,Advocacy & Activism
+297,ssant4,Law,Social Fraternities & Sororities,Humanities
+298,bbrow85,Veteran & Military Connected,Veterinary,Social & Behavioral Sciences
+299,cjime99,Environmental & Sustainability,Pedagogy & Instruction,~ Affiliation: Asian American Cultural Center (AACC)
+300,dwats48,Agricultural,Health & Human Sciences,Pedagogy & Instruction
+301,khaye94,Community Service & Philanthropy,Club Sports,~ Affiliation: Women's Resources Center (WRC)
+302,llope39,Pedagogy & Instruction,Honorary,Life & Physical Sciences
+303,mjohn9,Humanities,Performance Arts,Technology
+304,rengl89,Business,Social & Behavioral Sciences,Social & Leisure
+305,mspen82,Life & Physical Sciences,Media Arts,Health & Human Sciences
+306,jadam72,Community Service & Philanthropy,Environmental & Sustainability,Humanities
+307,jfred76,Technology,Athletic & Recreation,Social Fraternities & Sororities
+308,jgarc54,International,Social & Leisure,Community Service & Philanthropy
+309,lrowl24,~ Affiliation: Asian American Cultural Center (AACC),Agricultural,Health & Human Sciences
+310,eguer71,~ Affiliation: Asian American Cultural Center (AACC),Agricultural,Athletic & Recreation
+311,kmoor99,Education,Information & Data Sciences,Agricultural
+312,smora5,Business,International,Technology
+313,jzimm49,Information & Data Sciences,Pedagogy & Instruction,Business
+314,dperr36,Humanities,Club Sports,Law
+315,asand38,International,~ Affiliation: Asian American Cultural Center (AACC),Education
+316,abrow90,~ Affiliation: Asian American Cultural Center (AACC),Pedagogy & Instruction,Law
+317,khill62,Honorary,~ Affiliation: Asian American Cultural Center (AACC),Advocacy & Activism
+318,mwils27,~ Affiliation: Asian American Cultural Center (AACC),Education,Life & Physical Sciences
+319,amcke2,Honorary,Social Fraternities & Sororities,Health & Human Sciences
+320,cjohn53,Business,Student Governance & Councils,Advocacy & Activism
+321,nmora95,Veteran & Military Connected,Agricultural,Media Arts
+322,ajone82,Faith,Identity & Culture,Religion & Spirituality
+323,pmurp25,~ Affiliation: Asian American Cultural Center (AACC),Technology,Health & Wellness
+324,hwhee39,Engineering & Mathematics,Club Sports,Pedagogy & Instruction
+325,jsmit86,Advocacy & Activism,Life & Physical Sciences,Honorary
+326,pbens51,Information & Data Sciences,Community Service & Philanthropy,Humanities
+327,sblan10,International,Veterinary,Technology
+328,dgeor8,Religion & Spirituality,International,Social Fraternities & Sororities
+329,aprin50,Honorary,Social & Leisure,~ Affiliation: Women's Resources Center (WRC)
+330,vhall73,Life & Physical Sciences,Veteran & Military Connected,Agricultural
+331,dmyer45,Honorary,Ideology & Politics,Health & Human Sciences
+332,djenk9,Business,Social Fraternities & Sororities,Faith
+333,ksmit75,Technology,Athletic & Recreation,Athletic & Recreation
+334,mriva8,Social & Behavioral Sciences,Identity & Culture,Student Governance & Councils
+335,rheat60,Social & Leisure,Identity & Culture,Humanities
+336,ksawy77,International,Social & Behavioral Sciences,Technology
+337,kruss69,Business,Performance Arts,Student Governance & Councils
+338,gcamp14,Social & Leisure,Social & Behavioral Sciences,Technology
+339,cmidd31,Advocacy & Activism,Life & Physical Sciences,Law
+340,fgonz89,Engineering & Mathematics,Health & Human Sciences,Life & Physical Sciences
+341,sthom45,Social & Behavioral Sciences,Life & Physical Sciences,Athletic & Recreation
+342,arobi73,Social Fraternities & Sororities,Information & Data Sciences,Health & Human Sciences
+343,zponc77,Identity & Culture,~ Affiliation: Women's Resources Center (WRC),Ideology & Politics
+344,kcoll40,Education,Media Arts,Business
+345,kwhit4,Health & Wellness,Environmental & Sustainability,Religion & Spirituality
+346,dibar46,Information & Data Sciences,Pedagogy & Instruction,Pedagogy & Instruction
+347,cscot47,Athletic & Recreation,Religion & Spirituality,Agricultural
+348,swise3,~ Affiliation: Women's Resources Center (WRC),Identity & Culture,Law
+349,cgarr56,Engineering & Mathematics,Media Arts,International
+350,jcoll76,Advocacy & Activism,Environmental & Sustainability,Engineering & Mathematics
+351,jshep7,Technology,Humanities,Engineering & Mathematics
+352,twarr49,Law,Law,Identity & Culture
+353,jhick39,Pedagogy & Instruction,Ideology & Politics,Social & Leisure
+354,ccruz4,~ Affiliation: Asian American Cultural Center (AACC),Identity & Culture,Health & Wellness
+355,anels85,Engineering & Mathematics,Health & Wellness,Advocacy & Activism
+356,jgarc44,Media Arts,Social & Behavioral Sciences,Technology
+357,acarl81,Student Governance & Councils,Business,Advocacy & Activism
+358,amill23,Faith,Identity & Culture,~ Affiliation: Asian American Cultural Center (AACC)
+359,kgome2,Veteran & Military Connected,Humanities,Education
+360,arami97,Honorary,Health & Wellness,Agricultural
+361,ktran16,Media Arts,Health & Wellness,Veterinary
+362,dblac85,Education,Social & Leisure,Honorary
+363,ljeff61,Media Arts,Advocacy & Activism,Veterinary
+364,jlars96,Environmental & Sustainability,Health & Wellness,Law
+365,cchan13,Information & Data Sciences,Honorary,Community Service & Philanthropy
+366,dgood86,Student Governance & Councils,Humanities,Engineering & Mathematics
+367,rboye1,Religion & Spirituality,Life & Physical Sciences,Health & Human Sciences
+368,mhill79,Business,Information & Data Sciences,~ Affiliation: Women's Resources Center (WRC)
+369,nspar59,~ Affiliation: Women's Resources Center (WRC),Media Arts,Social & Leisure
+370,amurp78,Faith,Performance Arts,Performance Arts
+371,jevan94,Social Fraternities & Sororities,Life & Physical Sciences,Health & Wellness
+372,dconn38,Agricultural,Faith,Agricultural
+373,dbrya16,Information & Data Sciences,Health & Human Sciences,Advocacy & Activism
+374,rmedi95,Veteran & Military Connected,Pedagogy & Instruction,Pedagogy & Instruction
+375,abrow96,Advocacy & Activism,Health & Wellness,Information & Data Sciences
+376,ehall79,Veterinary,~ Affiliation: Women's Resources Center (WRC),Pedagogy & Instruction
+377,jjohn18,~ Affiliation: Asian American Cultural Center (AACC),Faith,Honorary
+378,gwill41,Social & Behavioral Sciences,Social Fraternities & Sororities,Engineering & Mathematics
+379,cwill53,Honorary,Veterinary,Agricultural
+380,jdrak78,Performance Arts,Business,Veteran & Military Connected
+381,lwood17,International,Club Sports,Law
+382,jland22,~ Affiliation: Women's Resources Center (WRC),Social & Leisure,~ Affiliation: Women's Resources Center (WRC)
+383,jthom34,~ Affiliation: Asian American Cultural Center (AACC),Athletic & Recreation,Social & Leisure
+384,dnels43,Athletic & Recreation,Social & Leisure,Technology
+385,cblak9,Environmental & Sustainability,Health & Wellness,Performance Arts
+386,bhobb80,Club Sports,Veteran & Military Connected,Ideology & Politics
+387,mmcin98,Pedagogy & Instruction,Pedagogy & Instruction,Business
+388,pschu2,Environmental & Sustainability,Social & Behavioral Sciences,Technology
+389,ajohn9,Performance Arts,Athletic & Recreation,Environmental & Sustainability
+390,dgonz40,Identity & Culture,~ Affiliation: Asian American Cultural Center (AACC),Student Governance & Councils
+391,bbrow50,Faith,Ideology & Politics,Media Arts
+392,mcars51,Social & Leisure,Advocacy & Activism,~ Affiliation: Women's Resources Center (WRC)
+393,mlope10,Media Arts,Community Service & Philanthropy,International
+394,lsali34,Environmental & Sustainability,Club Sports,Performance Arts
+395,amoor98,International,Identity & Culture,Law
+396,mthom80,Information & Data Sciences,Community Service & Philanthropy,Life & Physical Sciences
+397,amoon28,Technology,Technology,Club Sports
+398,jmitc81,Ideology & Politics,Ideology & Politics,Environmental & Sustainability
+399,crosa25,Student Governance & Councils,Advocacy & Activism,Engineering & Mathematics
+400,shend55,Law,Student Governance & Councils,Life & Physical Sciences
+401,sknox63,Honorary,Business,Social & Leisure
+402,aande17,Law,Life & Physical Sciences,~ Affiliation: Women's Resources Center (WRC)
+403,mtayl81,Social & Leisure,Veteran & Military Connected,Humanities
+404,cstew63,Education,Faith,Veteran & Military Connected
+405,pglas40,Faith,Humanities,Veteran & Military Connected
+406,djohn40,International,~ Affiliation: Women's Resources Center (WRC),Life & Physical Sciences
+407,npett19,Faith,Technology,Humanities
+408,jlee55,Business,Education,Student Governance & Councils
+409,pharr42,Advocacy & Activism,Club Sports,Social & Behavioral Sciences
+410,kedwa37,Information & Data Sciences,Veteran & Military Connected,Health & Wellness
+411,kalex33,Identity & Culture,Pedagogy & Instruction,Religion & Spirituality
+412,cschm16,Education,Religion & Spirituality,Ideology & Politics
+413,cburn59,Social & Behavioral Sciences,Social & Behavioral Sciences,Honorary
+414,dmayn17,Athletic & Recreation,Honorary,Information & Data Sciences
+415,jacos58,Athletic & Recreation,Business,~ Affiliation: Asian American Cultural Center (AACC)
+416,alewi45,Community Service & Philanthropy,Humanities,Pedagogy & Instruction
+417,rhowe3,Media Arts,~ Affiliation: Women's Resources Center (WRC),Pedagogy & Instruction
+418,treed96,Religion & Spirituality,Media Arts,Social & Leisure
+419,glewi80,Engineering & Mathematics,Humanities,Identity & Culture
+420,awash67,Agricultural,Advocacy & Activism,Business
+421,jhaye41,Technology,Club Sports,Life & Physical Sciences
+422,gcrai6,Community Service & Philanthropy,Business,Environmental & Sustainability
+423,mwood81,Pedagogy & Instruction,Law,Technology
+424,mmora89,Education,Ideology & Politics,Information & Data Sciences
+425,acort83,Social Fraternities & Sororities,Community Service & Philanthropy,International
+426,ahamm11,Environmental & Sustainability,Veteran & Military Connected,Ideology & Politics
+427,wrive94,Media Arts,Advocacy & Activism,Information & Data Sciences
+428,csell86,Student Governance & Councils,Engineering & Mathematics,Club Sports
+429,jmcma90,Technology,Veterinary,Agricultural
+430,dmart9,Pedagogy & Instruction,Technology,Business
+431,rflow23,Media Arts,Religion & Spirituality,Health & Wellness
+432,bgonz71,Religion & Spirituality,Community Service & Philanthropy,Ideology & Politics
+433,bpark42,Law,Life & Physical Sciences,Advocacy & Activism
+434,pdavi65,Religion & Spirituality,~ Affiliation: Asian American Cultural Center (AACC),Pedagogy & Instruction
+435,pguti78,Community Service & Philanthropy,Business,Social & Leisure
+436,mbald17,Business,Health & Wellness,Community Service & Philanthropy
+437,lmonr83,Veteran & Military Connected,Identity & Culture,Engineering & Mathematics
+438,morti80,Health & Human Sciences,Technology,Engineering & Mathematics
+439,jgood46,Honorary,Club Sports,Club Sports
+440,nchan27,International,Social & Behavioral Sciences,Performance Arts
+441,mmore74,Student Governance & Councils,Veterinary,Media Arts
+442,swall1,~ Affiliation: Asian American Cultural Center (AACC),Veterinary,Media Arts
+443,sharp19,Athletic & Recreation,Humanities,International
+444,kgarn54,Club Sports,Technology,Technology
+445,cdiaz64,Health & Human Sciences,Advocacy & Activism,Business
+446,ajone51,Social & Leisure,Technology,Business
+447,nmore61,Media Arts,Social & Behavioral Sciences,Media Arts
+448,mperr70,Veterinary,Club Sports,International
+449,kroge54,Humanities,Social & Behavioral Sciences,Performance Arts
+450,lharr70,~ Affiliation: Women's Resources Center (WRC),Life & Physical Sciences,Honorary
+451,ljone60,Humanities,Life & Physical Sciences,Media Arts
+452,wparr55,Club Sports,Media Arts,International
+453,msing45,~ Affiliation: Women's Resources Center (WRC),Social & Leisure,Life & Physical Sciences
+454,spere9,Engineering & Mathematics,International,Club Sports
+455,kday41,Business,Social Fraternities & Sororities,Environmental & Sustainability
+456,tfish60,Life & Physical Sciences,Student Governance & Councils,Advocacy & Activism
+457,bfuen46,Education,Business,~ Affiliation: Women's Resources Center (WRC)
+458,kburc92,Technology,Health & Wellness,Athletic & Recreation
+459,cpowe26,Health & Wellness,Media Arts,Health & Wellness
+460,abowe86,Social & Behavioral Sciences,Veterinary,Environmental & Sustainability
+461,amedi15,~ Affiliation: Women's Resources Center (WRC),Humanities,Agricultural
+462,srami59,Engineering & Mathematics,Advocacy & Activism,International
+463,cbest45,Law,Advocacy & Activism,~ Affiliation: Women's Resources Center (WRC)
+464,fhaye63,Honorary,Social & Behavioral Sciences,Health & Wellness
+465,mmora24,Identity & Culture,Club Sports,Identity & Culture
+466,mjone78,Club Sports,Environmental & Sustainability,Agricultural
+467,rgonz37,Social & Leisure,Social & Leisure,Athletic & Recreation
+468,msnyd41,Club Sports,Media Arts,Environmental & Sustainability
+469,jaria22,Health & Human Sciences,Engineering & Mathematics,Media Arts
+470,mhart34,Identity & Culture,Pedagogy & Instruction,Faith
+471,treye82,Technology,Veterinary,Performance Arts
+472,csoto51,Veteran & Military Connected,International,Veterinary
+473,rmuel12,Veteran & Military Connected,Athletic & Recreation,Engineering & Mathematics
+474,dhorn70,Club Sports,Pedagogy & Instruction,Business
+475,twill81,Performance Arts,Health & Human Sciences,Club Sports
+476,jholm5,~ Affiliation: Women's Resources Center (WRC),Performance Arts,Engineering & Mathematics
+477,aespi12,Honorary,Social & Behavioral Sciences,Humanities
+478,ahoov98,Faith,Social & Behavioral Sciences,Social & Behavioral Sciences
+479,bmill52,Advocacy & Activism,Honorary,Social & Behavioral Sciences
+480,welli20,Pedagogy & Instruction,Environmental & Sustainability,Veterinary
+481,ajohn56,Social & Behavioral Sciences,Business,Engineering & Mathematics
+482,egree93,Pedagogy & Instruction,Performance Arts,Technology
+483,jrive33,Technology,Veteran & Military Connected,Media Arts
+484,mlee95,Education,Humanities,Health & Human Sciences
+485,rmacd78,Social & Behavioral Sciences,Technology,Performance Arts
+486,jwils60,Veterinary,International,Social Fraternities & Sororities
+487,mdixo37,Veteran & Military Connected,Faith,Advocacy & Activism
+488,jruiz98,Environmental & Sustainability,Engineering & Mathematics,Student Governance & Councils
+489,ttuck23,Health & Wellness,Humanities,Club Sports
+490,anort89,Student Governance & Councils,Community Service & Philanthropy,Identity & Culture
+491,stayl45,Performance Arts,Religion & Spirituality,Performance Arts
+492,djenk68,Religion & Spirituality,Advocacy & Activism,Humanities
+493,ctayl14,~ Affiliation: Women's Resources Center (WRC),~ Affiliation: Asian American Cultural Center (AACC),Environmental & Sustainability
+494,pwhit22,Media Arts,Ideology & Politics,Student Governance & Councils
+495,aclar78,Athletic & Recreation,Humanities,Business
+496,ehall23,Club Sports,Ideology & Politics,Information & Data Sciences
+497,agonz29,Law,~ Affiliation: Women's Resources Center (WRC),Faith
+498,jgeor80,Pedagogy & Instruction,Health & Human Sciences,Ideology & Politics
+499,asull36,Environmental & Sustainability,Community Service & Philanthropy,Health & Human Sciences
+500,mbarn61,Veterinary,Veterinary,Pedagogy & Instruction
+501,clync52,Student Governance & Councils,Agricultural,Life & Physical Sciences
+502,jport40,Humanities,Student Governance & Councils,Advocacy & Activism
+503,nreye21,Business,~ Affiliation: Asian American Cultural Center (AACC),Agricultural
+504,dcoop8,Social & Leisure,Social & Leisure,~ Affiliation: Women's Resources Center (WRC)
+505,msmit95,Humanities,Club Sports,Honorary
+506,rhaye18,Faith,Agricultural,Humanities
+507,sgarc5,Advocacy & Activism,Pedagogy & Instruction,Agricultural
+508,dadam64,Community Service & Philanthropy,Humanities,Veteran & Military Connected
+509,nwelc6,Honorary,Performance Arts,Community Service & Philanthropy
+510,tkenn4,Advocacy & Activism,Club Sports,Health & Wellness
+511,cthor73,Health & Human Sciences,Student Governance & Councils,Identity & Culture
+512,nfros77,Athletic & Recreation,Technology,Performance Arts
+513,jhaye52,Ideology & Politics,International,Advocacy & Activism
+514,crodg5,Community Service & Philanthropy,Club Sports,Social & Behavioral Sciences
+515,sharp74,~ Affiliation: Asian American Cultural Center (AACC),Social & Leisure,Identity & Culture
+516,sfred33,Humanities,Agricultural,Health & Human Sciences
+517,bfran7,Information & Data Sciences,~ Affiliation: Women's Resources Center (WRC),Life & Physical Sciences
+518,slewi21,Club Sports,Club Sports,Club Sports
+519,cmill81,Law,Veterinary,Social Fraternities & Sororities
+520,cjack5,~ Affiliation: Asian American Cultural Center (AACC),Social & Leisure,Information & Data Sciences
+521,cwatt85,Advocacy & Activism,Social & Leisure,Education
+522,smora14,Media Arts,Social Fraternities & Sororities,Engineering & Mathematics
+523,tstev92,Social Fraternities & Sororities,~ Affiliation: Asian American Cultural Center (AACC),Social & Behavioral Sciences
+524,mwhit11,Technology,Performance Arts,Club Sports
+525,kbish37,Agricultural,Religion & Spirituality,Community Service & Philanthropy
+526,cmcki25,Performance Arts,Identity & Culture,Information & Data Sciences
+527,astaf90,Advocacy & Activism,Social & Leisure,Social & Behavioral Sciences
+528,cware97,Ideology & Politics,Technology,Social & Behavioral Sciences
+529,jvarg82,International,Media Arts,Community Service & Philanthropy
+530,rhopk93,Veteran & Military Connected,Engineering & Mathematics,Information & Data Sciences
+531,mrodr50,Veterinary,~ Affiliation: Asian American Cultural Center (AACC),Social & Behavioral Sciences
+532,slope79,Law,Health & Human Sciences,Agricultural
+533,mdoyl11,Health & Wellness,Veterinary,Life & Physical Sciences
+534,jclar5,Veterinary,Information & Data Sciences,Health & Wellness
+535,jestr47,Technology,Performance Arts,Veterinary
+536,rjohn72,Business,Life & Physical Sciences,Social & Behavioral Sciences
+537,cyoun39,Humanities,Law,Life & Physical Sciences
+538,sridd17,Social & Behavioral Sciences,Faith,International
+539,ajohn20,Community Service & Philanthropy,Information & Data Sciences,Club Sports
+540,rhous69,Engineering & Mathematics,Engineering & Mathematics,Pedagogy & Instruction
+541,kthom65,Social & Leisure,Engineering & Mathematics,International
+542,asnow6,Social Fraternities & Sororities,Performance Arts,Social & Leisure
+543,jlewi31,Identity & Culture,Social Fraternities & Sororities,Honorary
+544,dmald94,~ Affiliation: Women's Resources Center (WRC),~ Affiliation: Women's Resources Center (WRC),Advocacy & Activism
+545,kstev13,Law,Engineering & Mathematics,Pedagogy & Instruction
+546,krice6,Pedagogy & Instruction,Pedagogy & Instruction,Media Arts
+547,kcoop74,Technology,Social Fraternities & Sororities,Pedagogy & Instruction
+548,sflow30,Humanities,Life & Physical Sciences,Performance Arts
+549,showa78,Community Service & Philanthropy,Club Sports,Health & Human Sciences
+550,adani82,Environmental & Sustainability,Veterinary,Performance Arts
+551,kpark23,Technology,Athletic & Recreation,Information & Data Sciences
+552,sbish34,Health & Human Sciences,Religion & Spirituality,Club Sports
+553,sdani75,Social & Leisure,Advocacy & Activism,Social Fraternities & Sororities
+554,treed73,Athletic & Recreation,~ Affiliation: Asian American Cultural Center (AACC),Social Fraternities & Sororities
+555,vbarn46,Identity & Culture,Veterinary,~ Affiliation: Women's Resources Center (WRC)
+556,sharr37,Information & Data Sciences,Veterinary,Engineering & Mathematics
+557,kjone58,Social & Leisure,Pedagogy & Instruction,Ideology & Politics
+558,chend19,Ideology & Politics,Education,Advocacy & Activism
+559,mjohn68,Faith,Business,Social & Leisure
+560,cmack11,Humanities,Social & Leisure,Life & Physical Sciences
+561,mperr84,International,Humanities,Pedagogy & Instruction
+562,jnels14,Performance Arts,Social & Behavioral Sciences,Engineering & Mathematics
+563,asoto55,Performance Arts,Humanities,Identity & Culture
+564,nmuno57,Pedagogy & Instruction,International,Environmental & Sustainability
+565,rhuyn61,Law,Technology,International
+566,dgain59,Identity & Culture,Ideology & Politics,Agricultural
+567,rbake35,Pedagogy & Instruction,Advocacy & Activism,Performance Arts
+568,rjone24,Athletic & Recreation,Veteran & Military Connected,Club Sports
+569,tacev3,Student Governance & Councils,Life & Physical Sciences,Engineering & Mathematics
+570,docon61,International,Athletic & Recreation,Humanities
+571,mkent59,Social & Behavioral Sciences,Veteran & Military Connected,Ideology & Politics
+572,pclem33,Health & Human Sciences,Health & Human Sciences,Veteran & Military Connected
+573,nalva77,Performance Arts,Community Service & Philanthropy,Religion & Spirituality
+574,arami22,Agricultural,Veteran & Military Connected,Health & Human Sciences
+575,jwhit77,Ideology & Politics,Religion & Spirituality,~ Affiliation: Women's Resources Center (WRC)
+576,bholl80,Health & Human Sciences,Humanities,Advocacy & Activism
+577,psmit5,~ Affiliation: Women's Resources Center (WRC),~ Affiliation: Asian American Cultural Center (AACC),Veterinary
+578,lsmit36,Pedagogy & Instruction,Veteran & Military Connected,Veteran & Military Connected
+579,rperk60,Club Sports,Social & Leisure,Social & Leisure
+580,kbrow82,Athletic & Recreation,Student Governance & Councils,Identity & Culture
+581,vashl95,Life & Physical Sciences,Health & Human Sciences,Athletic & Recreation
+582,vgarc88,Athletic & Recreation,Health & Human Sciences,Religion & Spirituality
+583,lshie68,Environmental & Sustainability,Community Service & Philanthropy,Ideology & Politics
+584,sbake32,Faith,Humanities,Health & Human Sciences
+585,kwrig72,Engineering & Mathematics,Pedagogy & Instruction,Ideology & Politics
+586,anguy91,Social & Leisure,Social & Behavioral Sciences,Athletic & Recreation
+587,ahart97,Honorary,Advocacy & Activism,Community Service & Philanthropy
+588,smart88,Agricultural,Environmental & Sustainability,Veteran & Military Connected
+589,acruz16,Identity & Culture,Identity & Culture,~ Affiliation: Women's Resources Center (WRC)
+590,cjone82,Education,~ Affiliation: Women's Resources Center (WRC),Religion & Spirituality
+591,tmcin5,Business,Honorary,Education
+592,jbrau83,Law,Identity & Culture,Pedagogy & Instruction
+593,cande23,Veterinary,Environmental & Sustainability,Veteran & Military Connected
+594,sbenj50,Information & Data Sciences,Club Sports,Business
+595,mjack51,Law,Religion & Spirituality,Social & Leisure
+596,bmart35,Agricultural,Veterinary,Community Service & Philanthropy
+597,ajame46,Advocacy & Activism,Media Arts,Identity & Culture
+598,smeye15,Law,International,~ Affiliation: Asian American Cultural Center (AACC)
+599,eande50,Performance Arts,Student Governance & Councils,Religion & Spirituality
+600,jgeor20,Health & Human Sciences,Student Governance & Councils,Veterinary
+601,mgard33,Information & Data Sciences,Health & Human Sciences,Agricultural
+602,sdavi59,Business,Ideology & Politics,Club Sports
+603,arams1,Social & Behavioral Sciences,Agricultural,Health & Human Sciences
+604,agonz78,Law,Veterinary,Ideology & Politics
+605,gkent1,Technology,Social & Leisure,Performance Arts
+606,tthom44,Law,Club Sports,Honorary
+607,tsmit95,Club Sports,Business,Honorary
+608,kmart40,Environmental & Sustainability,Business,Social & Leisure
+609,hcerv58,Business,Pedagogy & Instruction,Social Fraternities & Sororities
+610,rbook89,Ideology & Politics,Environmental & Sustainability,Health & Human Sciences
+611,mlitt57,Club Sports,Student Governance & Councils,Athletic & Recreation
+612,fyoun81,~ Affiliation: Women's Resources Center (WRC),Education,Community Service & Philanthropy
+613,spere29,Community Service & Philanthropy,Technology,Technology
+614,sharr10,Humanities,Veterinary,Religion & Spirituality
+615,llawr14,Advocacy & Activism,Performance Arts,Veterinary
+616,stayl38,Faith,Veterinary,Club Sports
+617,jmart57,Community Service & Philanthropy,Education,Health & Human Sciences
+618,rhard88,Veterinary,Information & Data Sciences,Health & Human Sciences
+619,blowe11,Veteran & Military Connected,Information & Data Sciences,Health & Wellness
+620,ddavi39,Veteran & Military Connected,Club Sports,Environmental & Sustainability
+621,eharm75,Faith,Community Service & Philanthropy,Club Sports
+622,dhamm8,Law,Faith,Technology
+623,jlowe24,Health & Wellness,Community Service & Philanthropy,Student Governance & Councils
+624,choov65,Agricultural,Club Sports,Student Governance & Councils
+625,mevan29,Social & Behavioral Sciences,Veteran & Military Connected,Law
+626,njohn74,Education,Community Service & Philanthropy,Health & Wellness
+627,ghowa5,Social Fraternities & Sororities,Business,Veteran & Military Connected
+628,mmcgr83,International,Ideology & Politics,Athletic & Recreation
+629,jwall56,Health & Wellness,Social Fraternities & Sororities,Education
+630,jthom44,Media Arts,Honorary,Athletic & Recreation
+631,cperr25,Social & Leisure,Engineering & Mathematics,Engineering & Mathematics
+632,mheat81,~ Affiliation: Women's Resources Center (WRC),Club Sports,Humanities
+633,vking58,Veterinary,~ Affiliation: Asian American Cultural Center (AACC),Club Sports
+634,mlyon96,Identity & Culture,Agricultural,Health & Wellness
+635,jgree21,Law,Pedagogy & Instruction,Health & Human Sciences
+636,mbish60,Faith,Veterinary,Community Service & Philanthropy
+637,jhill15,Religion & Spirituality,Life & Physical Sciences,Information & Data Sciences
+638,bwils37,Agricultural,Information & Data Sciences,Health & Human Sciences
+639,mbrad47,~ Affiliation: Women's Resources Center (WRC),Religion & Spirituality,Student Governance & Councils
+640,khall33,Agricultural,Veteran & Military Connected,Performance Arts
+641,jjone41,Humanities,Business,Religion & Spirituality
+642,mreye48,~ Affiliation: Women's Resources Center (WRC),Faith,Social & Leisure
+643,rlee89,Life & Physical Sciences,Humanities,Law
+644,cvinc42,Business,Social Fraternities & Sororities,Ideology & Politics
+645,rgill13,Veterinary,Health & Wellness,Student Governance & Councils
+646,fpete89,Pedagogy & Instruction,Veteran & Military Connected,Pedagogy & Instruction
+647,cburt49,Faith,Law,Social Fraternities & Sororities
+648,mmore90,Student Governance & Councils,~ Affiliation: Asian American Cultural Center (AACC),Performance Arts
+649,mvazq61,Social & Leisure,Social & Behavioral Sciences,Student Governance & Councils
+650,mgood77,Education,Environmental & Sustainability,Identity & Culture
+651,pjone47,Law,Veteran & Military Connected,Ideology & Politics
+652,mhodg68,Life & Physical Sciences,Athletic & Recreation,Agricultural
+653,mgibs45,Community Service & Philanthropy,Advocacy & Activism,Veterinary
+654,rharr18,Agricultural,Faith,Social & Leisure
+655,nsmit4,Technology,~ Affiliation: Women's Resources Center (WRC),Health & Human Sciences
+656,jwils10,Club Sports,Honorary,Honorary
+657,sjame81,Information & Data Sciences,Athletic & Recreation,Advocacy & Activism
+658,apark99,Student Governance & Councils,Student Governance & Councils,~ Affiliation: Asian American Cultural Center (AACC)
+659,jmaso38,Law,Business,Social Fraternities & Sororities
+660,mdavi32,Athletic & Recreation,Health & Human Sciences,Veteran & Military Connected
+661,fdela13,Humanities,Environmental & Sustainability,~ Affiliation: Asian American Cultural Center (AACC)
+662,awill50,Student Governance & Councils,Health & Human Sciences,Ideology & Politics
+663,kboyl42,Ideology & Politics,Humanities,Health & Wellness
+664,arodr63,Veterinary,Law,Health & Wellness
+665,kcarl40,Student Governance & Councils,Athletic & Recreation,Student Governance & Councils
+666,dlope85,Honorary,Religion & Spirituality,Information & Data Sciences
+667,amill45,~ Affiliation: Asian American Cultural Center (AACC),Student Governance & Councils,International
+668,sbren10,Religion & Spirituality,Life & Physical Sciences,Identity & Culture
+669,aowen78,Technology,Life & Physical Sciences,Veterinary
+670,tbake89,Advocacy & Activism,Engineering & Mathematics,Club Sports
+671,tnich11,Identity & Culture,Law,Religion & Spirituality
+672,cluna18,Health & Wellness,Law,International
+673,kdura44,Faith,Information & Data Sciences,Law
+674,mpier68,Student Governance & Councils,Student Governance & Councils,Student Governance & Councils
+675,breye64,Humanities,International,Honorary
+676,pmerr68,~ Affiliation: Asian American Cultural Center (AACC),Environmental & Sustainability,Life & Physical Sciences
+677,dherr43,Life & Physical Sciences,Media Arts,Performance Arts
+678,cmcmi24,Business,Honorary,Student Governance & Councils
+679,bdunn89,Student Governance & Councils,Veterinary,Business
+680,asmit98,~ Affiliation: Asian American Cultural Center (AACC),Agricultural,Performance Arts
+681,jpear99,Athletic & Recreation,Advocacy & Activism,Social & Leisure
+682,jpere75,Agricultural,Technology,Performance Arts
+683,jyoun70,Religion & Spirituality,Health & Wellness,~ Affiliation: Women's Resources Center (WRC)
+684,msull39,Veterinary,Health & Wellness,Community Service & Philanthropy
+685,chayn32,Student Governance & Councils,~ Affiliation: Women's Resources Center (WRC),Student Governance & Councils
+686,rcont25,Social Fraternities & Sororities,Faith,Social & Leisure
+687,mcerv97,Engineering & Mathematics,Law,Education
+688,tblac35,Community Service & Philanthropy,~ Affiliation: Asian American Cultural Center (AACC),Law
+689,delli88,Community Service & Philanthropy,Club Sports,~ Affiliation: Asian American Cultural Center (AACC)
+690,magui32,Social Fraternities & Sororities,Media Arts,Student Governance & Councils
+691,dsmit24,Performance Arts,International,~ Affiliation: Women's Resources Center (WRC)
+692,kthom3,Environmental & Sustainability,Education,Social & Behavioral Sciences
+693,aturn78,Health & Human Sciences,Club Sports,Technology
+694,kfull41,Religion & Spirituality,Business,Student Governance & Councils
+695,ljone65,Education,Social & Leisure,Veteran & Military Connected
+696,sdalt51,Ideology & Politics,Veteran & Military Connected,Technology
+697,cwatk41,Veteran & Military Connected,~ Affiliation: Asian American Cultural Center (AACC),Athletic & Recreation
+698,joliv22,Business,Social & Behavioral Sciences,Community Service & Philanthropy
+699,lhill91,Veteran & Military Connected,~ Affiliation: Asian American Cultural Center (AACC),Religion & Spirituality
+700,sbrow72,Identity & Culture,Agricultural,Veterinary
+701,cyoun49,Social & Behavioral Sciences,Health & Wellness,Club Sports
+702,hyoun30,Advocacy & Activism,Pedagogy & Instruction,Technology
+703,vspen61,Social & Leisure,Community Service & Philanthropy,Education
+704,twils78,Business,Life & Physical Sciences,Health & Human Sciences
+705,cstev27,~ Affiliation: Asian American Cultural Center (AACC),Media Arts,Athletic & Recreation
+706,kcamp24,Social & Leisure,Humanities,Technology
+707,ajeff19,Performance Arts,Performance Arts,Honorary
+708,pproc85,Ideology & Politics,Business,~ Affiliation: Women's Resources Center (WRC)
+709,showa39,Student Governance & Councils,~ Affiliation: Women's Resources Center (WRC),Humanities
+710,fholt33,Faith,Environmental & Sustainability,~ Affiliation: Asian American Cultural Center (AACC)
+711,ccraw81,Veteran & Military Connected,Engineering & Mathematics,Agricultural
+712,mscot15,Religion & Spirituality,~ Affiliation: Asian American Cultural Center (AACC),~ Affiliation: Asian American Cultural Center (AACC)
+713,abenn87,Health & Wellness,Veteran & Military Connected,Faith
+714,estev98,Religion & Spirituality,Athletic & Recreation,Athletic & Recreation
+715,jjohn79,Advocacy & Activism,Faith,Environmental & Sustainability
+716,plowe57,Performance Arts,Business,Social Fraternities & Sororities
+717,ssmit79,Performance Arts,Agricultural,Veterinary
+718,abish49,~ Affiliation: Women's Resources Center (WRC),~ Affiliation: Asian American Cultural Center (AACC),Identity & Culture
+719,myork92,Social Fraternities & Sororities,Advocacy & Activism,~ Affiliation: Asian American Cultural Center (AACC)
+720,awood11,Media Arts,Veterinary,Veteran & Military Connected
+721,mbrad33,Media Arts,Student Governance & Councils,Advocacy & Activism
+722,kbaue94,International,Social & Behavioral Sciences,Engineering & Mathematics
+723,jkais88,~ Affiliation: Asian American Cultural Center (AACC),Performance Arts,Faith
+724,chart48,Life & Physical Sciences,Veteran & Military Connected,Social & Leisure
+725,msmit13,Faith,Information & Data Sciences,Technology
+726,matki9,Faith,Health & Human Sciences,Agricultural
+727,dlope52,Identity & Culture,Social & Leisure,Athletic & Recreation
+728,mjenk85,Social Fraternities & Sororities,Law,Social Fraternities & Sororities
+729,falle84,Business,Club Sports,Information & Data Sciences
+730,cnorr9,Health & Wellness,Community Service & Philanthropy,Social & Leisure
+731,mtayl44,Education,Faith,Advocacy & Activism
+732,aflor27,Veterinary,Business,Performance Arts
+733,dlewi79,Social Fraternities & Sororities,Identity & Culture,~ Affiliation: Women's Resources Center (WRC)
+734,gmalo84,Health & Wellness,International,Advocacy & Activism
+735,jpace96,Athletic & Recreation,Veteran & Military Connected,Law
+736,cchan11,Honorary,Business,Performance Arts
+737,rcart68,Religion & Spirituality,Social & Behavioral Sciences,Identity & Culture
+738,jkirk6,Veteran & Military Connected,Religion & Spirituality,Education
+739,dcook30,Student Governance & Councils,Honorary,International
+740,mmora18,Life & Physical Sciences,Health & Human Sciences,International
+741,hhamp69,Health & Wellness,Veteran & Military Connected,Health & Wellness
+742,cmitc34,Advocacy & Activism,Environmental & Sustainability,Identity & Culture
+743,dgray26,Life & Physical Sciences,Performance Arts,Honorary
+744,awrig20,Community Service & Philanthropy,Humanities,Engineering & Mathematics
+745,cgilb1,Club Sports,Law,Technology
+746,lmart89,Technology,Community Service & Philanthropy,Business
+747,sjohn16,Health & Wellness,Club Sports,Pedagogy & Instruction
+748,salle6,Veterinary,Health & Wellness,Veterinary
+749,jcald34,Health & Human Sciences,Engineering & Mathematics,Club Sports
+750,iedwa61,Religion & Spirituality,Health & Human Sciences,~ Affiliation: Women's Resources Center (WRC)
+751,rstan22,Media Arts,Agricultural,Faith
+752,chigg30,Technology,Performance Arts,Club Sports
+753,lgarc38,Pedagogy & Instruction,Life & Physical Sciences,International
+754,kwint13,Law,Engineering & Mathematics,Faith
+755,gfull68,Athletic & Recreation,Veterinary,Technology
+756,jcraw73,Education,Business,Athletic & Recreation
+757,dyoun13,Community Service & Philanthropy,Identity & Culture,Club Sports
+758,ksnyd75,Business,Environmental & Sustainability,Social Fraternities & Sororities
+759,sglas45,Honorary,Social Fraternities & Sororities,Technology
+760,abenn29,Advocacy & Activism,Health & Human Sciences,Education
+761,mmuel52,Advocacy & Activism,Social & Behavioral Sciences,Social & Behavioral Sciences
+762,rjack47,Honorary,Identity & Culture,Law
+763,afran34,~ Affiliation: Asian American Cultural Center (AACC),Information & Data Sciences,Veterinary
+764,nhend97,Identity & Culture,Community Service & Philanthropy,Community Service & Philanthropy
+765,kgibs29,Advocacy & Activism,Identity & Culture,Athletic & Recreation
+766,cwyat85,Honorary,Student Governance & Councils,Social & Leisure
+767,jlyon25,Honorary,Student Governance & Councils,Student Governance & Councils
+768,kbrad63,Environmental & Sustainability,Community Service & Philanthropy,Environmental & Sustainability
+769,jsull59,Performance Arts,Health & Wellness,Media Arts
+770,jmora37,~ Affiliation: Asian American Cultural Center (AACC),~ Affiliation: Asian American Cultural Center (AACC),~ Affiliation: Asian American Cultural Center (AACC)
+771,rwils52,Identity & Culture,Advocacy & Activism,Health & Human Sciences
+772,nwalt49,Social & Leisure,Veteran & Military Connected,Performance Arts
+773,jfran14,Technology,Religion & Spirituality,Pedagogy & Instruction
+774,astew41,Student Governance & Councils,Education,~ Affiliation: Asian American Cultural Center (AACC)
+775,ddavi94,Pedagogy & Instruction,Humanities,Social & Leisure
+776,rbens75,Environmental & Sustainability,~ Affiliation: Asian American Cultural Center (AACC),~ Affiliation: Asian American Cultural Center (AACC)
+777,adors65,Environmental & Sustainability,Student Governance & Councils,Health & Human Sciences
+778,amart5,Veteran & Military Connected,Life & Physical Sciences,Agricultural
+779,rbrow76,Business,Media Arts,Education
+780,dcher99,Information & Data Sciences,Faith,Performance Arts
+781,scurr84,Advocacy & Activism,Student Governance & Councils,Ideology & Politics
+782,cboyd45,Education,Social & Leisure,Business
+783,mrami91,Education,Media Arts,Social Fraternities & Sororities
+784,smcco98,Education,Club Sports,Faith
+785,cturn40,Information & Data Sciences,~ Affiliation: Women's Resources Center (WRC),Religion & Spirituality
+786,ttuck68,Honorary,Engineering & Mathematics,Health & Wellness
+787,dsmit34,Pedagogy & Instruction,~ Affiliation: Asian American Cultural Center (AACC),Social & Leisure
+788,cpadi11,Engineering & Mathematics,Education,~ Affiliation: Women's Resources Center (WRC)
+789,ajame13,Veteran & Military Connected,Identity & Culture,International
+790,bbeas11,Athletic & Recreation,Social & Leisure,Engineering & Mathematics
+791,cmcca58,Life & Physical Sciences,Humanities,Veteran & Military Connected
+792,slowe99,Community Service & Philanthropy,Performance Arts,Veterinary
+793,bespi36,~ Affiliation: Women's Resources Center (WRC),~ Affiliation: Women's Resources Center (WRC),Identity & Culture
+794,jcoll2,Athletic & Recreation,Social & Behavioral Sciences,Ideology & Politics
+795,rsmit79,Engineering & Mathematics,Athletic & Recreation,Business
+796,lcalh43,Law,Club Sports,Information & Data Sciences
+797,swest49,International,Performance Arts,Business
+798,jroge41,Advocacy & Activism,Business,Advocacy & Activism
+799,bmorr55,Honorary,~ Affiliation: Asian American Cultural Center (AACC),Community Service & Philanthropy
+800,cston74,Information & Data Sciences,Advocacy & Activism,Veteran & Military Connected
+801,mgay68,Performance Arts,Environmental & Sustainability,Environmental & Sustainability
+802,caust68,Social & Behavioral Sciences,Student Governance & Councils,Honorary
+803,amull94,Health & Wellness,Education,Humanities
+804,agarz31,Education,Humanities,Health & Wellness
+805,kcham87,Social & Leisure,Religion & Spirituality,Honorary
+806,rchan64,Club Sports,Athletic & Recreation,Athletic & Recreation
+807,salva97,Engineering & Mathematics,Veterinary,Pedagogy & Instruction
+808,hgood96,Health & Human Sciences,Social Fraternities & Sororities,Veterinary
+809,djone62,~ Affiliation: Women's Resources Center (WRC),Information & Data Sciences,International
+810,hbarn4,~ Affiliation: Women's Resources Center (WRC),Law,Agricultural
+811,amata79,Faith,Athletic & Recreation,~ Affiliation: Women's Resources Center (WRC)
+812,breed49,Information & Data Sciences,Religion & Spirituality,~ Affiliation: Asian American Cultural Center (AACC)
+813,ronea82,Faith,Community Service & Philanthropy,Life & Physical Sciences
+814,bmatt6,Club Sports,Religion & Spirituality,Veterinary
+815,kfran28,Athletic & Recreation,Faith,Advocacy & Activism
+816,jkell31,Ideology & Politics,Club Sports,Veteran & Military Connected
+817,rshaw25,Education,Information & Data Sciences,Religion & Spirituality
+818,bgate63,Business,Law,Club Sports
+819,abake96,Environmental & Sustainability,Student Governance & Councils,Information & Data Sciences
+820,vhull30,Performance Arts,Health & Human Sciences,International
+821,gpere55,Social & Leisure,Information & Data Sciences,Student Governance & Councils
+822,mjone39,Social Fraternities & Sororities,Veterinary,Agricultural
+823,njime97,Health & Human Sciences,Ideology & Politics,Faith
+824,mbrow71,~ Affiliation: Women's Resources Center (WRC),Community Service & Philanthropy,Advocacy & Activism
+825,msmit5,Life & Physical Sciences,Pedagogy & Instruction,Performance Arts
+826,rvill12,Technology,Environmental & Sustainability,Agricultural
+827,jbren74,Business,Ideology & Politics,Law
+828,jtayl79,Technology,Student Governance & Councils,Social Fraternities & Sororities
+829,zwill47,Faith,Club Sports,Performance Arts
+830,mluna66,Social & Behavioral Sciences,Humanities,Health & Human Sciences
+831,jgill78,Social & Behavioral Sciences,Health & Wellness,Life & Physical Sciences
+832,jhuff50,Community Service & Philanthropy,Social & Leisure,Humanities
+833,akenn91,Performance Arts,Education,Humanities
+834,sryan93,International,Social Fraternities & Sororities,Veterinary
+835,ledwa13,International,Education,Business
+836,bagui76,Community Service & Philanthropy,Humanities,Ideology & Politics
+837,ldalt45,Health & Wellness,Health & Human Sciences,Law
+838,walli76,Social & Leisure,Information & Data Sciences,Ideology & Politics
+839,lgarc49,Veteran & Military Connected,Advocacy & Activism,Performance Arts
+840,sbarn84,Athletic & Recreation,Information & Data Sciences,Social Fraternities & Sororities
+841,aflor62,Health & Human Sciences,~ Affiliation: Women's Resources Center (WRC),Environmental & Sustainability
+842,acruz59,Law,Media Arts,Veteran & Military Connected
+843,ereed53,Health & Human Sciences,~ Affiliation: Asian American Cultural Center (AACC),Media Arts
+844,jmyer66,Ideology & Politics,Business,Pedagogy & Instruction
+845,plope1,Honorary,~ Affiliation: Women's Resources Center (WRC),Education
+846,ralle57,~ Affiliation: Women's Resources Center (WRC),Business,Pedagogy & Instruction
+847,ereid79,Humanities,Identity & Culture,Veterinary
+848,mferg11,Education,Humanities,Health & Wellness
+849,chane72,Community Service & Philanthropy,Community Service & Philanthropy,Performance Arts
+850,mharr13,Life & Physical Sciences,Ideology & Politics,International
+851,showa70,~ Affiliation: Women's Resources Center (WRC),Club Sports,Honorary
+852,lsmit24,Humanities,Social Fraternities & Sororities,Performance Arts
+853,scole76,Information & Data Sciences,Media Arts,Engineering & Mathematics
+854,kdavi19,Identity & Culture,Life & Physical Sciences,Education
+855,tmedi20,Performance Arts,Faith,Health & Human Sciences
+856,kvarg9,Veteran & Military Connected,Social & Behavioral Sciences,Humanities
+857,lhern98,International,Education,Social & Behavioral Sciences
+858,cfran30,Technology,Law,Social Fraternities & Sororities
+859,wschm95,Performance Arts,Social & Behavioral Sciences,Performance Arts
+860,slaws4,Health & Wellness,Performance Arts,Veterinary
+861,rperr45,International,~ Affiliation: Women's Resources Center (WRC),~ Affiliation: Asian American Cultural Center (AACC)
+862,rrowe35,Social & Behavioral Sciences,Health & Human Sciences,Social Fraternities & Sororities
+863,apars87,Life & Physical Sciences,Veteran & Military Connected,Health & Wellness
+864,jhill75,Education,Life & Physical Sciences,Health & Wellness
+865,acast87,Religion & Spirituality,Community Service & Philanthropy,Athletic & Recreation
+866,swalk30,Social & Behavioral Sciences,Business,Social & Behavioral Sciences
+867,pgarc76,Veterinary,Identity & Culture,Pedagogy & Instruction
+868,abond37,Student Governance & Councils,Engineering & Mathematics,Community Service & Philanthropy
+869,dguer97,Law,Community Service & Philanthropy,Education
+870,smoon23,Technology,Veterinary,Humanities
+871,jclay36,Ideology & Politics,Ideology & Politics,Humanities
+872,dpric59,Media Arts,Humanities,Community Service & Philanthropy
+873,vruiz14,Social & Leisure,Social & Leisure,Advocacy & Activism
+874,kbate24,Student Governance & Councils,Advocacy & Activism,Identity & Culture
+875,hwilk35,Health & Human Sciences,Life & Physical Sciences,Club Sports
+876,jpowe39,Engineering & Mathematics,Athletic & Recreation,Club Sports
+877,smill17,Pedagogy & Instruction,Education,~ Affiliation: Women's Resources Center (WRC)
+878,mramo47,Student Governance & Councils,Social & Leisure,Veteran & Military Connected
+879,charr57,Social & Behavioral Sciences,Social Fraternities & Sororities,Identity & Culture
+880,kneal14,Education,Technology,Life & Physical Sciences
+881,twils88,Pedagogy & Instruction,Social Fraternities & Sororities,Community Service & Philanthropy
+882,chill41,Education,Performance Arts,Technology
+883,jloga51,~ Affiliation: Asian American Cultural Center (AACC),Business,Faith
+884,kcruz94,Life & Physical Sciences,~ Affiliation: Women's Resources Center (WRC),Community Service & Philanthropy
+885,aport80,Performance Arts,Identity & Culture,Law
+886,sleon66,Life & Physical Sciences,Faith,Media Arts
+887,kphil32,Agricultural,Information & Data Sciences,Student Governance & Councils
+888,dmcle20,Club Sports,International,Identity & Culture
+889,amay8,Environmental & Sustainability,Health & Human Sciences,Health & Human Sciences
+890,tmccl34,Health & Wellness,Social & Behavioral Sciences,Health & Wellness
+891,nburn90,Engineering & Mathematics,Environmental & Sustainability,Environmental & Sustainability
+892,kbell28,Performance Arts,Media Arts,Agricultural
+893,cmcdo28,Humanities,Veteran & Military Connected,Information & Data Sciences
+894,svela34,Health & Wellness,Faith,Business
+895,rvaug32,Business,Education,~ Affiliation: Women's Resources Center (WRC)
+896,zford53,Health & Human Sciences,International,International
+897,jphil92,Social & Leisure,Ideology & Politics,Law
+898,drobi81,Media Arts,Veteran & Military Connected,Health & Wellness
+899,celli12,Law,Club Sports,Honorary
+900,edavi48,Pedagogy & Instruction,Media Arts,Agricultural
+901,ejohn17,Social Fraternities & Sororities,Life & Physical Sciences,Business
+902,jgarc26,Environmental & Sustainability,Agricultural,Community Service & Philanthropy
+903,csawy59,Identity & Culture,Veterinary,Club Sports
+904,jrobi44,Honorary,~ Affiliation: Women's Resources Center (WRC),Health & Human Sciences
+905,awill51,Community Service & Philanthropy,Community Service & Philanthropy,Law
+906,smoor22,Environmental & Sustainability,Humanities,Environmental & Sustainability
+907,chowe19,Student Governance & Councils,Social & Behavioral Sciences,Information & Data Sciences
+908,swood8,Identity & Culture,Social & Behavioral Sciences,~ Affiliation: Asian American Cultural Center (AACC)
+909,gmart78,Media Arts,Health & Wellness,Student Governance & Councils
+910,apitt36,Life & Physical Sciences,Performance Arts,Health & Human Sciences
+911,jmath9,Life & Physical Sciences,Life & Physical Sciences,Athletic & Recreation
+912,tagui82,Humanities,Health & Human Sciences,Business
+913,jnich8,Health & Wellness,Social & Behavioral Sciences,Health & Human Sciences
+914,aheat37,Veterinary,Humanities,Religion & Spirituality
+915,tgrah78,Media Arts,Life & Physical Sciences,Identity & Culture
+916,rrich47,Information & Data Sciences,Pedagogy & Instruction,~ Affiliation: Women's Resources Center (WRC)
+917,myoun56,Life & Physical Sciences,Advocacy & Activism,International
+918,lgarc99,Health & Human Sciences,Faith,Identity & Culture
+919,shopk36,Veteran & Military Connected,Advocacy & Activism,Engineering & Mathematics
+920,rwood90,Student Governance & Councils,~ Affiliation: Asian American Cultural Center (AACC),International
+921,jfrye26,Information & Data Sciences,Law,Club Sports
+922,agibs8,Athletic & Recreation,Honorary,Education
+923,trami21,~ Affiliation: Women's Resources Center (WRC),Community Service & Philanthropy,Business
+924,wdean92,Humanities,Education,Club Sports
+925,groy84,Education,Veteran & Military Connected,~ Affiliation: Asian American Cultural Center (AACC)
+926,tdunc14,Agricultural,Environmental & Sustainability,~ Affiliation: Women's Resources Center (WRC)
+927,achap87,Veteran & Military Connected,Engineering & Mathematics,Education
+928,lguti51,Social & Leisure,Identity & Culture,Faith
+929,cevan7,Religion & Spirituality,Engineering & Mathematics,Environmental & Sustainability
+930,edavi62,Social & Leisure,Technology,Agricultural
+931,dbail34,Media Arts,Environmental & Sustainability,Religion & Spirituality
+932,sstan59,Student Governance & Councils,Athletic & Recreation,Club Sports
+933,dmath98,Community Service & Philanthropy,Athletic & Recreation,Social & Behavioral Sciences
+934,tgarr12,Social & Behavioral Sciences,Information & Data Sciences,Athletic & Recreation
+935,swong22,Student Governance & Councils,Religion & Spirituality,Pedagogy & Instruction
+936,hharr72,Life & Physical Sciences,~ Affiliation: Women's Resources Center (WRC),Club Sports
+937,rdean48,Life & Physical Sciences,Social Fraternities & Sororities,Technology
+938,mreed86,Veterinary,~ Affiliation: Women's Resources Center (WRC),Health & Human Sciences
+939,drowe38,Environmental & Sustainability,Business,Information & Data Sciences
+940,abenn34,Health & Wellness,~ Affiliation: Women's Resources Center (WRC),Social Fraternities & Sororities
+941,lwill55,Performance Arts,Business,Environmental & Sustainability
+942,jfull17,Social Fraternities & Sororities,Humanities,Information & Data Sciences
+943,bgonz77,~ Affiliation: Women's Resources Center (WRC),Education,Health & Wellness
+944,jguti28,Media Arts,International,Social & Behavioral Sciences
+945,twrig1,Social & Behavioral Sciences,~ Affiliation: Women's Resources Center (WRC),Social & Behavioral Sciences
+946,kherr4,Student Governance & Councils,Ideology & Politics,Humanities
+947,dmonr2,Business,Life & Physical Sciences,Media Arts
+948,nmont85,Environmental & Sustainability,Community Service & Philanthropy,Health & Wellness
+949,aespa60,Advocacy & Activism,Faith,Technology
+950,jcole87,Club Sports,Athletic & Recreation,Media Arts
+951,rli53,Athletic & Recreation,Community Service & Philanthropy,Social Fraternities & Sororities
+952,cgarc29,Engineering & Mathematics,Club Sports,~ Affiliation: Asian American Cultural Center (AACC)
+953,ffish34,Identity & Culture,Health & Human Sciences,Health & Wellness
+954,jrobi87,Religion & Spirituality,Media Arts,Veteran & Military Connected
+955,mande1,International,Business,Athletic & Recreation
+956,bnels97,Advocacy & Activism,Law,Identity & Culture
+957,ksimm84,~ Affiliation: Asian American Cultural Center (AACC),Education,~ Affiliation: Women's Resources Center (WRC)
+958,hbake96,Honorary,Pedagogy & Instruction,Veteran & Military Connected
+959,jirwi6,Community Service & Philanthropy,~ Affiliation: Women's Resources Center (WRC),Information & Data Sciences
+960,ssmit84,Pedagogy & Instruction,Faith,Technology
+961,cthom88,Advocacy & Activism,Ideology & Politics,Law
+962,wgoul50,Humanities,Health & Wellness,Social & Behavioral Sciences
+963,bnels55,Social & Leisure,Honorary,International
+964,hferg57,Life & Physical Sciences,Environmental & Sustainability,Community Service & Philanthropy
+965,ksali62,Health & Wellness,Business,~ Affiliation: Asian American Cultural Center (AACC)
+966,jmeza74,Social & Behavioral Sciences,Faith,Faith
+967,ejone4,Social Fraternities & Sororities,Student Governance & Councils,Technology
+968,jwhit57,Information & Data Sciences,Identity & Culture,Social Fraternities & Sororities
+969,sdavi32,Athletic & Recreation,Health & Human Sciences,Community Service & Philanthropy
+970,mcarr83,Health & Wellness,Environmental & Sustainability,Club Sports
+971,csmit39,Health & Human Sciences,Ideology & Politics,Social & Behavioral Sciences
+972,rwang20,Veterinary,Law,Student Governance & Councils
+973,rjone8,Life & Physical Sciences,Pedagogy & Instruction,Agricultural
+974,jhard84,Athletic & Recreation,Honorary,Law
+975,dmurp98,Social Fraternities & Sororities,Technology,Veteran & Military Connected
+976,rjohn66,Club Sports,Education,Health & Human Sciences
+977,dmoor11,Engineering & Mathematics,Athletic & Recreation,Technology
+978,dherr21,Club Sports,Pedagogy & Instruction,Information & Data Sciences
+979,slyon7,~ Affiliation: Women's Resources Center (WRC),Performance Arts,Social & Behavioral Sciences
+980,bmuel11,Student Governance & Councils,Business,Humanities
+981,dwill36,Veteran & Military Connected,Veteran & Military Connected,Health & Wellness
+982,bwils27,Environmental & Sustainability,Social Fraternities & Sororities,Engineering & Mathematics
+983,gdavi6,~ Affiliation: Women's Resources Center (WRC),International,Social & Leisure
+984,mpete25,Student Governance & Councils,Health & Wellness,Faith
+985,cande28,Club Sports,Health & Wellness,Honorary
+986,tsull35,Media Arts,Environmental & Sustainability,Veteran & Military Connected
+987,mstev36,Engineering & Mathematics,Veteran & Military Connected,~ Affiliation: Asian American Cultural Center (AACC)
+988,jbrow94,Agricultural,Religion & Spirituality,Veterinary
+989,amcph30,International,Health & Human Sciences,Veteran & Military Connected
+990,jsant79,Engineering & Mathematics,Technology,Media Arts
+991,tshar29,Student Governance & Councils,Ideology & Politics,Business
+992,mchri8,International,Business,Community Service & Philanthropy
+993,sthom55,Veterinary,Social & Behavioral Sciences,Faith
+994,dstew74,Life & Physical Sciences,Religion & Spirituality,Religion & Spirituality
+995,bhowe35,Media Arts,Social Fraternities & Sororities,Agricultural
+996,njohn59,Advocacy & Activism,Education,Social & Leisure
+997,bmart6,Humanities,Business,Life & Physical Sciences
+998,estew56,Social & Leisure,Veteran & Military Connected,Life & Physical Sciences
+999,jpugh36,Social Fraternities & Sororities,Health & Human Sciences,Social & Leisure
