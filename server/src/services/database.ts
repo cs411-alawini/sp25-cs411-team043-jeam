@@ -6,6 +6,10 @@ import { Student_Interests } from "../student_interests";
 import { Students } from "../students";
 
 import { loadData } from "../../../data/dataparser";
+
+import pool from './connection';
+import { RowDataPacket } from "mysql2";
+
 let sd: Students[] = [];
 
 (async () => {
@@ -30,18 +34,13 @@ let sd: Students[] = [];
 })();
 
 export async function getAllStudents(): Promise<Students[]> {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(sd);
-      }, 300);
-    });
+    const [rows] = await pool.query('SELECT * FROM student LIMIT 20;');
+    return rows as Students[];
   }
 
 export async function getStudentByName(name: string): Promise<Students[]> {
     const queryName = name.toLowerCase();
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(sd.filter(s => s.name.toLowerCase().includes(queryName)));
-      }, 300);
-    });
+    const sqlQuery = `SELECT * FROM student WHERE name LIKE '%${queryName}%';`;
+    const [rows] = await pool.query(sqlQuery);
+    return rows as Students[];
   }
