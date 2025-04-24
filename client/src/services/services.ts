@@ -119,3 +119,11 @@ type RSOInterest = {
     })
     .then((response) => response.data);
   };
+
+  export const searchRSOData = (query: string): Promise<RSOInterest[]> => {
+    return httpClient
+    .get("http://localhost:3007/rsos", {
+      params: { search: query },
+    })
+    .then((response) => response.data);
+  };
