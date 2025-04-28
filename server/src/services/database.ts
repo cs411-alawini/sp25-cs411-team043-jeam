@@ -4,160 +4,157 @@ import { RSO_Interests } from "../rso_interest";
 import { RSO } from "../rso";
 import { Student_Interests } from "../student_interests";
 import { Students } from "../students";
-
-import { loadData } from "../../../data/dataparser";
-let sd: Students[] = [];
-let rsoi: RSO_Interests[] = [];
-let si: Student_Interests[] = [];
-let rso: RSO[] = [];
-
-(async () => {
-  const {
-    students,
-    rsos,
-    studentInterests,
-    departments,
-    roster,
-    rsoInterests
-  } = await loadData();
-
-  console.log("Loaded", students.length, "students");
-  console.log("Loaded", rsoInterests.length, "RSO's");
-
-  const dd: Departments[] = departments
-  const rd: Roster[] = roster
-  const rid: RSO_Interests[] = rsoInterests
-  const rsod: RSO[] = rsos
-  const sid: Student_Interests[] = studentInterests
-  sd = students
-  rsoi = rsoInterests
-  si = studentInterests
-  rso = rsos
-
-})();
+import pool from './connection';
 
 export async function getAllStudents(): Promise<Students[]> {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(sd);
-      }, 300);
-    });
+  try {
+    const [rows] = await pool.query('SELECT * FROM Students');
+    return rows as Students[];
+  } catch (error) {
+    console.error('Error fetching students:', error);
+    throw error;
   }
+}
 
 export async function getStudentByName(name: string): Promise<Students[]> {
-    const queryName = name.toLowerCase();
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(sd.filter(s => s.name.toLowerCase().includes(queryName)));
-      }, 300);
-    });
+  try {
+    const [rows] = await pool.query('SELECT * FROM Students WHERE name LIKE ?', [`%${name}%`]);
+    return rows as Students[];
+  } catch (error) {
+    console.error('Error searching for student:', error);
+    throw error;
   }
+}
 
-  export async function getAllRSOS(): Promise<RSO_Interests[]> {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(rsoi);
-      }, 300);
-    });
+export async function getAllRSOS(): Promise<RSO_Interests[]> {
+  try {
+    const [rows] = await pool.query('SELECT * FROM RSO_Interests');
+    return rows as RSO_Interests[];
+  } catch (error) {
+    console.error('Error fetching RSOs:', error);
+    throw error;
   }
+}
 
-  export async function getRSOByName(name: string): Promise<RSO_Interests[]> {
-    const queryName = name.toLowerCase();
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(rsoi.filter(s => s.RSOname.toLowerCase().includes(queryName)));
-      }, 300);
-    });
+export async function getRSOByName(name: string): Promise<RSO_Interests[]> {
+  try {
+    const [rows] = await pool.query('SELECT * FROM RSO_Interests WHERE RSOname LIKE ?', [`%${name}%`]);
+    return rows as RSO_Interests[];
+  } catch (error) {
+    console.error('Error searching for RSO:', error);
+    throw error;
   }
+}
 
-  export function addStudent(
-    newStudent: Students,
-    interests: { interest1: string; interest2: string; interest3: string }
-  ): void {
-    if (!sd.find(s => s.netId === newStudent.netId)) {
-      sd.push(newStudent);
+export async function addStudent(
+  newStudent: Students,
+  interests: { interest1: string; interest2: string; interest3: string }
+): Promise<void> {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
 
-      const nextId =
-        si.length === 0
-          ? "1"
-          : (Math.max(...si.map(i => parseInt(i.studentInterestId))) + 1).toString();
-  
-      const newStudentInterests: Student_Interests = {
-        studentInterestId: nextId,
-        netId: newStudent.netId,
-        interest1: interests.interest1,
-        interest2: interests.interest2,
-        interest3: interests.interest3,
-      };
-  
-      si.push(newStudentInterests);
-    } else {
-      console.warn(`Student with ID ${newStudent.netId} already exists.`);
-    }
+    await connection.query(
+      'INSERT INTO Students (netId, name, year, minor, major, taggedPref, prefTimeComm) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      [newStudent.netId, newStudent.name, newStudent.year, newStudent.minor, newStudent.major, 
+       newStudent.taggedPref, newStudent.prefTimeComm]
+    );
+
+    await connection.query(
+      'INSERT INTO Student_Interests (netId, interest1, interest2, interest3) VALUES (?, ?, ?, ?)',
+      [newStudent.netId, interests.interest1, interests.interest2, interests.interest3]
+    );
+
+    await connection.commit();
+  } catch (error) {
+    await connection.rollback();
+    console.error('Error adding student:', error);
+    throw error;
+  } finally {
+    connection.release();
   }
-  
+}
 
-  export function deleteStudent(studentId: string): void {
-    sd = sd.filter(s => s.netId !== studentId);
-    si = si.filter(s => s.netId !== studentId);
+export async function deleteStudent(studentId: string): Promise<void> {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
+
+    await connection.query('DELETE FROM Student_Interests WHERE netId = ?', [studentId]);
+    await connection.query('DELETE FROM Students WHERE netId = ?', [studentId]);
+
+    await connection.commit();
+  } catch (error) {
+    await connection.rollback();
+    console.error('Error deleting student:', error);
+    throw error;
+  } finally {
+    connection.release();
   }
+}
 
-  export function addRSO(
-    newRSO: RSO,
-    interests: { interest1: string; interest2: string; interest3: string }
-  ): void {
-    if (!rso.find(s => s.RSOName === newRSO.RSOName)) {
-      rso.push(newRSO);
-  
-      // Get the next RSOInterestId as string
-      const nextId =
-        rsoi.length === 0
-          ? "1"
-          : (Math.max(...rsoi.map(i => parseInt(i.RSOInterestId))) + 1).toString();
-  
-      const newRSOInterests: RSO_Interests = {
-        RSOInterestId: nextId,
-        RSOname: newRSO.RSOName,
-        RSOInterest1: interests.interest1,
-        RSOInterest2: interests.interest2,
-        RSOInterest3: interests.interest3,
-      };
-  
-      rsoi.push(newRSOInterests);
-    } else {
-      console.warn(`RSO with Name ${newRSO.RSOName} already exists.`);
-    }
+export async function addRSO(
+  newRSO: RSO,
+  interests: { interest1: string; interest2: string; interest3: string }
+): Promise<void> {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
+
+    await connection.query(
+      'INSERT INTO RSOs (RSOName, department, expTimeComm, taggedPref) VALUES (?, ?, ?, ?)',
+      [newRSO.RSOName, newRSO.department, newRSO.expTimeComm, newRSO.taggedPref]
+    );
+
+    await connection.query(
+      'INSERT INTO RSO_Interests (RSOname, RSOInterest1, RSOInterest2, RSOInterest3) VALUES (?, ?, ?, ?)',
+      [newRSO.RSOName, interests.interest1, interests.interest2, interests.interest3]
+    );
+
+    await connection.commit();
+  } catch (error) {
+    await connection.rollback();
+    console.error('Error adding RSO:', error);
+    throw error;
+  } finally {
+    connection.release();
   }
-  
+}
 
-  export function deleteRSO(rsoName: string): void {
-    rso = rso.filter(s => s.RSOName !== rsoName);
-    rsoi = rsoi.filter(s => s.RSOname !== rsoName);
+export async function deleteRSO(rsoName: string): Promise<void> {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
+
+    await connection.query('DELETE FROM RSO_Interests WHERE RSOname = ?', [rsoName]);
+    await connection.query('DELETE FROM RSOs WHERE RSOName = ?', [rsoName]);
+
+    await connection.commit();
+  } catch (error) {
+    await connection.rollback();
+    console.error('Error deleting RSO:', error);
+    throw error;
+  } finally {
+    connection.release();
   }
+}
 
-  export async function updateStudentInterests(netId: string, newInterests: { interest1: string; interest2: string; interest3: string }): Promise<void> {
-    const entry = si.find((interest) => interest.netId === netId);
-    if (entry) {
-      if(!entry.interest1) {
-        entry.interest1 = "NA";
-      } else {
-        entry.interest1 = newInterests.interest1;
-      }
-
-      if(!entry.interest2) {
-        entry.interest2 = "NA";
-      } else {
-        entry.interest2 = newInterests.interest2;
-      }
-
-      if(!entry.interest3) {
-        entry.interest3 = "NA";
-      } else {
-        entry.interest3 = newInterests.interest3;
-      }
-    } else {
-      console.warn(`No student interests found for netId: ${netId}`);
-    }
+export async function updateStudentInterests(
+  netId: string, 
+  newInterests: { interest1: string; interest2: string; interest3: string }
+): Promise<void> {
+  try {
+    await pool.query(
+      'UPDATE Student_Interests SET interest1 = ?, interest2 = ?, interest3 = ? WHERE netId = ?',
+      [
+        newInterests.interest1 || 'NA',
+        newInterests.interest2 || 'NA',
+        newInterests.interest3 || 'NA',
+        netId
+      ]
+    );
+  } catch (error) {
+    console.error('Error updating student interests:', error);
+    throw error;
   }
-  
-  
+}

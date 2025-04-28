@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "ES6",                           // Transpile modern JS (async/await, etc.)
     "module": "CommonJS",                      // Use CommonJS for Node compatibility
-    "rootDir": "..",                          // Your source files live here
+    "rootDir": "./src",                        // Your source files live here
     "outDir": "dist",                          // Compiled JS goes here (if you build)
     "strict": true,                            // Enable strict type checking
     "esModuleInterop": true,                   // Allow default import of CommonJS modules
     "forceConsistentCasingInFileNames": true,  // Helps avoid case-sensitivity bugs
     "skipLibCheck": true                       // Speed up build by skipping .d.ts type checks
   },
-  "include": ["src", "../data/dataparser.ts"],                          // Include your source folder
+  "include": ["src/**/*"],                     // Include only files in src directory
   "exclude": ["node_modules", "dist"]          // Don't compile these folders
 }

@@ -1,47 +1,103 @@
 import React, {useState, useEffect} from "react";
+import { Box } from "@mui/material";
 import SearchBar from "../components/searchBar/searchBar";
 import StudentList from "../components/studentList/studentList";
-
 import { searchStudentData } from "../services/services";
 import { Students } from "../students";
+import AddStudentForm from '../components/AddStudentFormProps/AddStudentFormProps';
 
 const StudentPage: React.FC = () => {
-    const [searchQuery, setSearchQuery] = useState("");
-    const [studentData, setStudentData] = useState<Students[]>([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [studentData, setStudentData] = useState<Students[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-    const handleSearch = (query: string) => {
-        setSearchQuery(query);
-    };
-
-    // useEffect to fetch data based on search query
-    useEffect(() => {
-    const fetchData = async () => {
-        setStudentData([]);
-        const data = await searchStudentData(searchQuery);
+  // Add this useEffect hook to load initial data
+  useEffect(() => {
+    const loadInitialData = async () => {
+      setIsLoading(true);
+      try {
+        const data = await searchStudentData("");
         setStudentData(data);
+      } catch (error) {
+        console.error('Error loading initial data:', error);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
-    fetchData();
-    }, [searchQuery]); // Trigger effect whenever the search query changes
+    loadInitialData();
+  }, []); // Empty dependency array means this runs once when component mounts
+
+
+  const handleSearch = async (query: string) => {
+    setSearchQuery(query);
+    setIsLoading(true);
+    try {
+      const data = await searchStudentData(query);
+      setStudentData(data);
+    } catch (error) {
+      console.error('Error searching students:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleDeleteStudent = (deletedNetId: string) => {
+    setStudentData(prevData => prevData.filter(student => student.netId !== deletedNetId));
+  };
+
+  const handleDelete = async (netId: string) => {
+    try {
+        const response = await fetch(`http://localhost:3007/students/${netId}`, {
+            method: 'DELETE',
+        });
+        
+        if (!response.ok) {
+            throw new Error('Failed to delete student');
+        }
+        
+        const data = await response.json();
+        if (data.message === 'Student deleted successfully') {
+            handleDeleteStudent(netId);
+        }
+    } catch (error) {
+        console.error('Error deleting student:', error);
+    }
+  };
+
+
+  const handleStudentAdded = async (newStudent: Students) => {
+    setStudentData(prevData => [...prevData, newStudent]);
+    // Refresh the full list to ensure we have the latest data
+    const data = await searchStudentData("");
+    setStudentData(data);
+  };
 
   return (
     <>
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="lg:pr-8 lg:pt-4">
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"> All Students </h1>
-              <h2 className="text-base font-semibold leading-7 text-indigo-600"> Hi students </h2>
-            </div>
+          <div className="mx-auto text-center mb-16">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
+              Student Directory
+            </h1>
           </div>
         </div>
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8">
-        <SearchBar onSearch = {handleSearch} />
-        <div className="mt-6 py-10 sm:py-15">
-          <StudentList StudentsData={studentData} />
-        </div>
+        <Box sx={{ display: 'flex', gap: 3 }}>
+          <Box sx={{ flex: 1 }}>
+            <SearchBar onSearch={handleSearch} />
+            <StudentList 
+              StudentsData={studentData} 
+              onDeleteStudent={handleDeleteStudent}
+            />
+          </Box>
+          <Box sx={{ width: '400px' }}>
+            <AddStudentForm onStudentAdded={handleStudentAdded} />
+          </Box>
+        </Box>
       </div>
     </>
   );

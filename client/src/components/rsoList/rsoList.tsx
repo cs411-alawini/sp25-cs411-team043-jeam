@@ -1,27 +1,51 @@
-import React from "react";
-import { RSO_Interests } from "../../rso_interest";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { RSO_Interests } from '../../rso_interest';
+import { 
+  Card, 
+  CardContent, 
+  Typography, 
+  Box, 
+  Stack,
+  Chip
+} from '@mui/material';
 
-interface RsoListProps {
+interface RSOListProps {
   RsoData: RSO_Interests[];
 }
 
-const RSOList: React.FC<RsoListProps> = ({ RsoData }) => {
+const RSOList: React.FC<RSOListProps> = ({ RsoData }) => {
   return (
-    <ul className="divide-y divide-gray-200">
-      {RsoData.map((RSO_Interests) => (
-        <li key={RSO_Interests.RSOname} className="flex py-4">
-        <div className="ml-3 py-5">
-          <p className="text-xl font-semibold text-gray-900">
-            {RSO_Interests.RSOname}
-          </p>
-          <p className="text-md text-gray-700">{RSO_Interests.RSOInterest1}</p>
-          <p className="text-md text-gray-700">{RSO_Interests.RSOInterest2}</p>
-          <p className="text-md text-gray-700">{RSO_Interests.RSOInterest3}</p>
-        </div>
-      </li>
+    <Stack spacing={2}>
+      {RsoData.map((rso, index) => (
+        <Card 
+          key={rso.RSOInterestId || index}
+          sx={{
+            border: '1px solid #e0e0e0',
+            borderRadius: 2,
+            boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+          }}
+        >
+          <CardContent>
+            <Typography variant="h6" color="primary" gutterBottom>
+              {rso.RSOname}
+            </Typography>
+            
+            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
+              {[rso.RSOInterest1, rso.RSOInterest2, rso.RSOInterest3]
+                .filter(interest => interest && interest !== 'NA')
+                .map((interest, idx) => (
+                  <Chip
+                    key={idx}
+                    label={interest}
+                    size="small"
+                    sx={{ bgcolor: '#f5f5f5' }}
+                  />
+                ))}
+            </Box>
+          </CardContent>
+        </Card>
       ))}
-    </ul>
+    </Stack>
   );
 };
 

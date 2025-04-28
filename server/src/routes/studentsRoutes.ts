@@ -1,78 +1,239 @@
-import { Router, Request, Response } from "express";
-import { getAllStudents, getStudentByName, addStudent, deleteStudent, updateStudentInterests } from "../services/database";
-import { Students } from "../students";
+import express, { Request, Response } from 'express';
+import pool from '../services/connection';
 
-const router = Router();
+const router = express.Router();
 
-// students?search=Christopher Liu
+router.delete('/:netId', async (req: Request, res: Response) => {
+  const connection = await pool.getConnection();
+  try {
+      await connection.beginTransaction();
+      const { netId } = req.params;
+      
+      // First delete from related tables in the correct order
+      await connection.query('DELETE FROM Student_Interests WHERE netId = ?', [netId]);
+      
+      // Delete from Roster table
+      await connection.query('DELETE FROM Roster WHERE netId = ?', [netId]);
+      
+      // Finally delete from Students table
+      const [result] = await connection.query('DELETE FROM Students WHERE netId = ?', [netId]);
+      
+      await connection.commit();
+      res.status(200).json({ message: 'Student deleted successfully' });
+  } catch (error) {
+      await connection.rollback();
+      console.error('Error deleting student:', error);
+      res.status(500).json({ 
+          error: 'Failed to delete student'
+      });
+  } finally {
+      connection.release();
+  }
+});
+
+// Update the search query to include all fields
 router.get("/", async (req: Request, res: Response) => {
-  console.log("Searching For Students");
-  if (!req.query.search) {
-    try {
-      const allStudents: Students[] = await getAllStudents();
-      res.status(200).json(allStudents);
-    } catch (error) {
-      res.status(500).json({ message: "Error fetching Student" });
+  try {
+    if (req.query.search) {
+      const [rows] = await pool.query(
+        'SELECT * FROM Students WHERE name LIKE ? OR netId LIKE ? OR major LIKE ?',
+        [`%${req.query.search}%`, `%${req.query.search}%`, `%${req.query.search}%`]
+      );
+      res.json(rows);
+    } else {
+      const [rows] = await pool.query('SELECT * FROM Students');
+      res.json(rows);
     }
-  } else {
-    const query = req.query.search as string;
-    try {
-      const student = await getStudentByName(query);
-      console.log("Got here");
-      res.status(200).json(student);
-    } catch (error) {
-      res.status(500).json({ message: "Error fetching Student" });
-    }
+  } catch (error) {
+    console.error('Error fetching students:', error);
+    res.status(500).json({ error: 'Failed to fetch students' });
   }
 });
 
-// POST /students
-router.post("/", (req: Request, res: Response) => {
-  const student: Students = req.body.student;
-  const interests = req.body.interests; // { interest1, interest2, interest3 }
-
-  if (!student || !interests) {
-    res.status(400).json({ message: "Student and interests required" });
-  }
-
+router.post('/', async (req: Request, res: Response) => {
+  const connection = await pool.getConnection();
   try {
-    addStudent(student, interests);
-    res.status(201).json({ message: "Student added successfully" });
-  } catch (err) {
-    res.status(500).json({ message: "Error adding student" });
+    await connection.beginTransaction();
+    const student = req.body;
+    
+    await connection.query(
+      'INSERT INTO Students (netId, name, year, minor, major, taggedPref, prefTimeComm) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      [student.netId, student.name, student.year, student.minor, student.major, student.taggedPref, student.prefTimeComm]
+    );
+    
+    // Explicitly type the query result
+    const [[newStudent]] = await connection.query<any[]>(
+      'SELECT * FROM Students WHERE netId = ?', 
+      [student.netId]
+    );
+    
+    await connection.commit();
+    res.status(201).json(newStudent);
+  } catch (error) {
+    await connection.rollback();
+    console.error('Error creating student:', error);
+    res.status(500).json({ error: 'Failed to create student' });
+  } finally {
+    connection.release();
   }
 });
 
-// DELETE /students/:netId
-router.delete("/:netId", (req: Request, res: Response) => {
-  const netId = req.params.netId;
-
-  if (!netId) {
-    res.status(400).json({ message: "netId is required" });
-  }
-
+router.get("/stats/club-membership", async (req: Request, res: Response) => {
+  const connection = await pool.getConnection();
   try {
-    deleteStudent(netId); 
-    res.status(200).json({ message: `Student ${netId} deleted successfully` });
-  } catch (err) {
-    res.status(500).json({ message: "Error deleting student" });
+    await connection.beginTransaction();
+    const [rows] = await connection.query(`
+      SELECT 
+        r.RSO_name,
+        COUNT(r.netId) as member_count,
+        AVG(s.year) as avg_member_year,
+        GROUP_CONCAT(DISTINCT s.major) as member_majors,
+        (
+          SELECT GROUP_CONCAT(DISTINCT si.interest1) 
+          FROM Student_Interests si 
+          WHERE si.netId IN (
+            SELECT netId FROM Roster WHERE RSO_name = r.RSO_name
+          )
+        ) as common_interests
+      FROM Roster r
+      JOIN Students s ON r.netId = s.netId
+      GROUP BY r.RSO_name
+      ORDER BY member_count DESC
+    `);
+    
+    await connection.commit();
+    res.json(rows);
+  } catch (error) {
+    await connection.rollback();
+    console.error('Error getting club statistics:', error);
+    res.status(500).json({ error: 'Failed to get club statistics' });
+  } finally {
+    connection.release();
   }
 });
 
-// PUT /students/:netId/interests
-router.put("/:netId/interests", async (req: Request, res: Response) => {
-  const netId = req.params.netId;
-  const { interest1, interest2, interest3 } = req.body;
+interface RSOMatch {
+  RSOName: string;
+  department: string;
+  taggedPref: string;
+  current_members: number;
+  rso_interests: string;
+  match_score: number;
+}
 
-  if (!interest1 || !interest2 || !interest3) {
-    res.status(400).json({ message: "All three interests are required" });
-  }
+import { RowDataPacket } from 'mysql2';
 
+interface RSOMatch extends RowDataPacket {
+  RSOName: string;
+  department: string;
+  taggedPref: string;
+  current_members: number;
+  rso_interests: string;
+  match_score: number;
+}
+
+router.get("/:netId/rso-matches", async (req: Request, res: Response) => {
+  const connection = await pool.getConnection();
   try {
-    await updateStudentInterests(netId, { interest1, interest2, interest3 });
-    res.status(200).json({ message: "Interests updated successfully" });
-  } catch (err) {
-    res.status(500).json({ message: "Error updating interests" });
+    const { netId } = req.params;
+    const [rows] = await connection.query<RSOMatch[]>(`
+      WITH StudentInterests AS (
+        SELECT interest1, interest2, interest3
+        FROM Student_Interests
+        WHERE netId = ?
+      )
+      SELECT DISTINCT 
+        r.RSOName,
+        r.department,
+        r.taggedPref,
+        COUNT(DISTINCT ros.netId) as current_members,
+        GROUP_CONCAT(DISTINCT ri.RSOInterest1, ', ', ri.RSOInterest2, ', ', ri.RSOInterest3) as rso_interests,
+        (
+          CASE 
+            WHEN ri.RSOInterest1 IN (SELECT interest1 FROM StudentInterests) OR
+                 ri.RSOInterest1 IN (SELECT interest2 FROM StudentInterests) OR
+                 ri.RSOInterest1 IN (SELECT interest3 FROM StudentInterests) OR
+                 ri.RSOInterest2 IN (SELECT interest1 FROM StudentInterests) OR
+                 ri.RSOInterest2 IN (SELECT interest2 FROM StudentInterests) OR
+                 ri.RSOInterest2 IN (SELECT interest3 FROM StudentInterests) OR
+                 ri.RSOInterest3 IN (SELECT interest1 FROM StudentInterests) OR
+                 ri.RSOInterest3 IN (SELECT interest2 FROM StudentInterests) OR
+                 ri.RSOInterest3 IN (SELECT interest3 FROM StudentInterests)
+            THEN 1
+            ELSE 0
+          END
+        ) as match_score
+      FROM RSOs r
+      LEFT JOIN Roster ros ON r.RSOName = ros.RSO_name
+      LEFT JOIN RSO_Interests ri ON r.RSOName = ri.RSOname
+      WHERE EXISTS (
+        SELECT 1 FROM StudentInterests si
+        WHERE ri.RSOInterest1 IN (si.interest1, si.interest2, si.interest3)
+        OR ri.RSOInterest2 IN (si.interest1, si.interest2, si.interest3)
+        OR ri.RSOInterest3 IN (si.interest1, si.interest2, si.interest3)
+      )
+      GROUP BY r.RSOName, r.department, r.taggedPref, ri.RSOInterest1, ri.RSOInterest2, ri.RSOInterest3
+      HAVING match_score > 0
+      ORDER BY match_score DESC, current_members DESC
+    `, [netId]);
+
+    console.log('Student NetID:', netId);
+    console.log('Number of matches found:', rows.length);
+    console.log('First few matches:', rows.slice(0, 3));
+
+    res.json(rows);
+  } catch (error) {
+    console.error('Error getting RSO matches:', error);
+    res.status(500).json({ error: 'Failed to get RSO matches' });
+  } finally {
+    connection.release();
+  }
+});
+
+router.get("/:netId/similar", async (req: Request, res: Response) => {
+  const connection = await pool.getConnection();
+  try {
+    const { netId } = req.params;
+    const [rows] = await connection.query(`
+      WITH StudentInterests AS (
+        SELECT interest1, interest2, interest3
+        FROM Student_Interests
+        WHERE netId = ?
+      )
+      SELECT DISTINCT 
+        s.netId,
+        s.name,
+        s.year,
+        s.major,
+        s.minor,
+        GROUP_CONCAT(DISTINCT si.interest1, ', ', si.interest2, ', ', si.interest3) as interests,
+        COUNT(DISTINCT si.interest1) as match_count
+      FROM Students s
+      JOIN Student_Interests si ON s.netId = si.netId
+      JOIN StudentInterests search 
+      WHERE s.netId != ?
+      AND (
+        si.interest1 IN (SELECT interest1 FROM StudentInterests)
+        OR si.interest1 IN (SELECT interest2 FROM StudentInterests)
+        OR si.interest1 IN (SELECT interest3 FROM StudentInterests)
+        OR si.interest2 IN (SELECT interest1 FROM StudentInterests)
+        OR si.interest2 IN (SELECT interest2 FROM StudentInterests)
+        OR si.interest2 IN (SELECT interest3 FROM StudentInterests)
+        OR si.interest3 IN (SELECT interest1 FROM StudentInterests)
+        OR si.interest3 IN (SELECT interest2 FROM StudentInterests)
+        OR si.interest3 IN (SELECT interest3 FROM StudentInterests)
+      )
+      GROUP BY s.netId, s.name, s.year, s.major, s.minor
+      ORDER BY match_count DESC
+    `, [netId, netId]);
+
+    console.log('Found similar students:', rows);
+    res.json(rows);
+  } catch (error) {
+    console.error('Error finding similar students:', error);
+    res.status(500).json({ error: 'Failed to find similar students' });
+  } finally {
+    connection.release();
   }
 });
 
