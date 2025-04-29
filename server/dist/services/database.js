@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.initializeDatabase = initializeDatabase;
 exports.getAllStudents = getAllStudents;
 exports.getStudentByName = getStudentByName;
 exports.getAllRSOS = getAllRSOS;
@@ -22,6 +23,28 @@ exports.addRSO = addRSO;
 exports.deleteRSO = deleteRSO;
 exports.updateStudentInterests = updateStudentInterests;
 const connection_1 = __importDefault(require("./connection"));
+const deletea_triggers_1 = require("../migrations/deletea_triggers");
+const prevent_duplicates_1 = require("../migrations/prevent_duplicates");
+function initializeDatabase() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const connection = yield connection_1.default.getConnection();
+        try {
+            console.log('Initializing database...');
+            // Clean up all existing triggers first
+            yield (0, deletea_triggers_1.cleanupTriggers)(connection);
+            // Only reinitialize the duplicate prevention trigger
+            yield (0, prevent_duplicates_1.up)(connection);
+            console.log('Database initialized successfully');
+        }
+        catch (error) {
+            console.error('Error initializing database:', error);
+            throw error;
+        }
+        finally {
+            connection.release();
+        }
+    });
+}
 function getAllStudents() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -82,6 +105,9 @@ function addStudent(newStudent, interests) {
         }
         catch (error) {
             yield connection.rollback();
+            if (error.message.includes('Account already exists under this netID')) {
+                throw new Error('Account already exists under this netID');
+            }
             console.error('Error adding student:', error);
             throw error;
         }
@@ -95,9 +121,18 @@ function deleteStudent(studentId) {
         const connection = yield connection_1.default.getConnection();
         try {
             yield connection.beginTransaction();
-            yield connection.query('DELETE FROM Student_Interests WHERE netId = ?', [studentId]);
-            yield connection.query('DELETE FROM Students WHERE netId = ?', [studentId]);
+            console.log(`Attempting to delete student: ${studentId}`);
+            // Delete from Roster first
+            const [rosterResult] = yield connection.query('DELETE FROM Roster WHERE netId = ?', [studentId]);
+            console.log('Deleted from Roster');
+            // Delete from Student_Interests
+            const [interestsResult] = yield connection.query('DELETE FROM Student_Interests WHERE netId = ?', [studentId]);
+            console.log('Deleted from Student_Interests');
+            // Finally delete from Students
+            const [studentResult] = yield connection.query('DELETE FROM Students WHERE netId = ?', [studentId]);
+            console.log('Deleted from Students');
             yield connection.commit();
+            console.log(`Successfully deleted student with netId: ${studentId}`);
         }
         catch (error) {
             yield connection.rollback();

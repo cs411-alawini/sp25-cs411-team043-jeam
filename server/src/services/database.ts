@@ -5,7 +5,28 @@ import { RSO } from "../rso";
 import { Student_Interests } from "../student_interests";
 import { Students } from "../students";
 import pool from './connection';
+import { cleanupTriggers } from '../migrations/deletea_triggers';
+import { up as initPreventDuplicateNetId } from '../migrations/prevent_duplicates';
 
+export async function initializeDatabase() {
+  const connection = await pool.getConnection();
+  try {
+    console.log('Initializing database...');
+    
+    // Clean up all existing triggers first
+    await cleanupTriggers(connection);
+    
+    // Only reinitialize the duplicate prevention trigger
+    await initPreventDuplicateNetId(connection);
+    
+    console.log('Database initialized successfully');
+  } catch (error) {
+    console.error('Error initializing database:', error);
+    throw error;
+  } finally {
+    connection.release();
+  }
+}
 export async function getAllStudents(): Promise<Students[]> {
   try {
     const [rows] = await pool.query('SELECT * FROM Students');
@@ -66,8 +87,11 @@ export async function addStudent(
     );
 
     await connection.commit();
-  } catch (error) {
+  } catch (error: any) {
     await connection.rollback();
+    if (error.message.includes('Account already exists under this netID')) {
+      throw new Error('Account already exists under this netID');
+    }
     console.error('Error adding student:', error);
     throw error;
   } finally {
@@ -80,10 +104,22 @@ export async function deleteStudent(studentId: string): Promise<void> {
   try {
     await connection.beginTransaction();
 
-    await connection.query('DELETE FROM Student_Interests WHERE netId = ?', [studentId]);
-    await connection.query('DELETE FROM Students WHERE netId = ?', [studentId]);
+    console.log(`Attempting to delete student: ${studentId}`);
+
+    // Delete from Roster first
+    const [rosterResult] = await connection.query('DELETE FROM Roster WHERE netId = ?', [studentId]);
+    console.log('Deleted from Roster');
+
+    // Delete from Student_Interests
+    const [interestsResult] = await connection.query('DELETE FROM Student_Interests WHERE netId = ?', [studentId]);
+    console.log('Deleted from Student_Interests');
+
+    // Finally delete from Students
+    const [studentResult]: any = await connection.query('DELETE FROM Students WHERE netId = ?', [studentId]);
+    console.log('Deleted from Students');
 
     await connection.commit();
+    console.log(`Successfully deleted student with netId: ${studentId}`);
   } catch (error) {
     await connection.rollback();
     console.error('Error deleting student:', error);

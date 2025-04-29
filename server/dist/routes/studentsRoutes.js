@@ -15,31 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const connection_1 = __importDefault(require("../services/connection"));
 const router = express_1.default.Router();
-router.delete('/:netId', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const connection = yield connection_1.default.getConnection();
-    try {
-        yield connection.beginTransaction();
-        const { netId } = req.params;
-        // First delete from related tables in the correct order
-        yield connection.query('DELETE FROM Student_Interests WHERE netId = ?', [netId]);
-        // Delete from Roster table
-        yield connection.query('DELETE FROM Roster WHERE netId = ?', [netId]);
-        // Finally delete from Students table
-        const [result] = yield connection.query('DELETE FROM Students WHERE netId = ?', [netId]);
-        yield connection.commit();
-        res.status(200).json({ message: 'Student deleted successfully' });
-    }
-    catch (error) {
-        yield connection.rollback();
-        console.error('Error deleting student:', error);
-        res.status(500).json({
-            error: 'Failed to delete student'
-        });
-    }
-    finally {
-        connection.release();
-    }
-}));
 // Update the search query to include all fields
 router.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -85,7 +60,6 @@ router.get("/stats/club-membership", (req, res) => __awaiter(void 0, void 0, voi
       SELECT 
         r.RSO_name,
         COUNT(r.netId) as member_count,
-        AVG(s.year) as avg_member_year,
         GROUP_CONCAT(DISTINCT s.major) as member_majors,
         (
           SELECT GROUP_CONCAT(DISTINCT si.interest1) 
@@ -106,6 +80,41 @@ router.get("/stats/club-membership", (req, res) => __awaiter(void 0, void 0, voi
         yield connection.rollback();
         console.error('Error getting club statistics:', error);
         res.status(500).json({ error: 'Failed to get club statistics' });
+    }
+    finally {
+        connection.release();
+    }
+}));
+router.delete('/:netId', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const connection = yield connection_1.default.getConnection();
+    try {
+        yield connection.beginTransaction();
+        const { netId } = req.params;
+        console.log(`Attempting to delete student: ${netId}`);
+        // Delete from dependent tables first
+        yield connection.query('DELETE FROM Student_Interests WHERE netId = ?', [netId]);
+        console.log('Deleted from Student_Interests');
+        yield connection.query('DELETE FROM Roster WHERE netId = ?', [netId]);
+        console.log('Deleted from Roster');
+        // Finally delete from Students table
+        const [result] = yield connection.query('DELETE FROM Students WHERE netId = ?', [netId]);
+        if (result.affectedRows === 0) {
+            throw new Error('No student found with that netId');
+        }
+        yield connection.commit();
+        res.status(200).json({
+            message: 'Student deleted successfully',
+            deletedNetId: netId
+        });
+    }
+    catch (error) {
+        yield connection.rollback();
+        console.error('Error deleting student:', error);
+        const statusCode = error.message.includes('No student found') ? 404 : 500;
+        res.status(statusCode).json({
+            error: 'Deletion failed',
+            details: error.message
+        });
     }
     finally {
         connection.release();
